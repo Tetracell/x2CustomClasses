@@ -1,0 +1,467 @@
+This is a list of all the Base Game WotC XCOM Perks you can use, you might not have even thought of some of these.
+They are sorted by what weapon they require with General-Non Weapon perks at the top. They are also written in the way to add them to XComClassData.ini
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Contents:
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+01. General Perks (Don't require any specific weapon)
+02. Conditional Perks (Require specific weapon, secondary weapon or condition)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+01/ "General Perks" (A-Z)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-Aim, Hunker Down on the previous turn provides +20 Aim on the next shot (Works Great with Deep Cover)
+AbilityName="SharpshooterAim", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Banish, Keep firing at a target until it dies or you run out of ammo (Revelas Shadowed units)
+AbilityName="SoulReaper", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Battlelord, Once per mission take an action after every enemy in line of sight takes an action (once per enemy)
+AbilityName="Battlelord"
+
+-Biggest Booms, Grenades have a chance to deal criticla damage now
+AbilityName="BiggestBooms",  ApplyToWeaponSlot=eInvSlot_Unknown or AbilityName="BiggestBooms"
+
+-Blast Padding, Gain 1 point of Armor + Explosive DMG Reduction
+AbilityName="BlastPadding",  ApplyToWeaponSlot=eInvSlot_Unknown
+
+-Bloodtrail, Attacks against wounded enemies deal +1 damage (if they are wounded on this turn)
+AbilityName="BloodTrail", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Chain Shot, Take a shot with an aim penalty, if it hits then take another shot (This is more viable now that RapidFire has a cooldown)
+AbilityName="ChainShot",  ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Combat Presence, Grant an extra action to an ally
+AbilityName="CombatPresence", ApplyToWeaponSlot=eInvSlot_Unknown
+
+-Conceal, Soldier can re-enter concealment once per mission
+AbilityName="Stealth"
+
+-Cool Under Pressure, Removes the aim and crit penalties on overwatch
+AbilityName="CoolUnderPressure", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Covering Fire, Overwatch shots will trigger on enemy actions not just movement
+AbilityName="CoveringFire",  ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Deadeye, Deals extra damage but has an aim penalty - Also it requires 2 actions to fire
+AbilityName="Deadeye", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Deadshot, +10% Critical chance against enemies
+AbilityName="HitWhereItHurts", ApplyToWeaponSlot=eInvSlot_Unknown
+
+-Death From Above, Kills from highground do not end your turn (but they will also leave you with only 1 action)
+AbilityName="DeathFromAbove", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Demolition, Destroy Cover but deal no damage
+AbilityName="Demolition", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Deep Cover, Soldier will hunker down after only performing move actions this turn
+AbilityName="DeepCover"
+
+-Ever Vigilant, If you spend all your actions on moving you will go into overwatch (Seems to work fine with DeepCover but note that the devs block DeepCover on the Specialist)
+AbilityName="EverVigilant",  ApplyToWeaponSlot=eInvSlot_Unknown
+
+-Field Medic, Equipped Medikits gain +2 charges
+AbilityName="FieldMedic",  ApplyToWeaponSlot=eInvSlot_Unknown
+
+-Full Throttle, Kills this turn grant +2 mobility this turn
+AbilityName="FullThrottle", ApplyToWeaponSlot=eInvSlot_Unknown
+
+-Grapple, Grapple somewhere (there is normal and skirmisher, both are likely the same)
+AbilityName="Grapple",  ApplyToWeaponSlot=eInvSlot_Unknown or AbilityName="Grapple"
+AbilityName="SkirmisherGrapple", ApplyToWeaponSlot=eInvSlot_Unknown
+
+-Guardian, When on Overwatch get a 50% chance to take an additional overwatch shot, this can continue until you run out of ammo
+AbilityName="Sentinel",  ApplyToWeaponSlot=eInvSlot_Unknown
+
+-Hail of Bullets, 100% chance to hit but uses up 3 ammo and has long cooldown
+AbilityName="HailOfBullets",  ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Holo Targeting, Shots the soldier makes mark a target providing +15 aim to allies attacks on marked target
+AbilityName="HoloTargeting",  ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Hunters Instincts, Extra Damage versus flanked enemies and increased critical chance on sword attacks? (might also work on pistols etc)
+AbilityName="HuntersInstinct", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Implacable, Soldier gains a movement action after scoring a kill
+AbilityName="Implacable"
+
+-Infiltration, Increased Hack Score and Advent Security Towers cannot detect this unit
+AbilityName="Infiltration", ApplyToWeaponSlot=eInvSlot_Unknown or AbilityName="Infiltration"
+
+-Interrupt, A powerful form of overwatch, instead of reaction fire perform any action isntead (there are restrictions)
+AbilityName="SkirmisherInterrupt"
+
+-Judgement, Attacking enemies have a chance to panic
+AbilityName="Judgment"
+
+-Killzone, Allows you to put down an overwatch zone in which you will fire at anything that comes into the area until you run out of ammo
+AbilityName="KillZone", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Lightning Reflexes, Makes first overwatch against you miss and every other overwatch has a reduced chance to hit
+AbilityName="LightningReflexes", ApplyToWeaponSlot=eInvSlot_Unknown
+
+-Manual Override, Lower all ability cooldowns by 1
+AbilityName="ManualOverride"
+
+-Marauder, Standard shots cost 1 action
+AbilityName="SkirmisherStrike"
+
+-Parkour, A 5% chance for another action after the first move of your turn
+AbilityName="Parkour", ApplyToWeaponSlot=eInvSlot_Unknown or AbilityName="Parkour"
+
+-Phantom, Soldier Remains Concealed when the Squad is revealed
+AbilityName="Phantom"
+
+-RapidFire, Soldier takes 2 shots at an enemy, has an aim penalty
+AbilityName="RapidFire", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Reflex, When fired at gain an extra action next turn, once per mission
+AbilityName="SkirmisherReflex"
+
+-Remote Start, Blow up any explosive object in the field (also they do more damage and have wider area)
+AbilityName="RemoteStart", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Return Fire (Skirmisher Version), This is supposed to return fire on attacking enemies with your primary weapon once per turn but soldiers who have pistols will use the pistol instead
+AbilityName="SkirmisherReturnFire", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Run & Gun, Soldier can activate this to be able to do a dash then take an action
+AbilityName="RunAndGun"
+
+-Rupture, A shot that ruptures a target making them take +3 damage from all future attacks, uses lot of ammo and has long cooldown
+AbilityName="BulletShred", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Saturation Fire, A cone based attack that damages targets and destroys cover, uses lots of ammo and has long cooldown
+AbilityName="SaturationFire",  ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Salvo, Using a Grenade or Heavy Weapon as the first action no longer ends the soldiers turn
+AbilityName="Salvo",  ApplyToWeaponSlot=eInvSlot_Unknown
+
+-Serial, When active, kills with your primary weapon will not end your turn allowing for a powerful kill streak if used right
+AbilityName="InTheZone", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Shadow, A New powerful form of concealment
+AbilityName="Shadow", ApplyToWeaponSlot=eInvSlot_Unknown
+
+-Shadowstep, Soldier can move without triggering overwatch
+AbilityName="Shadowstep", ApplyToWeaponSlot=eInvSlot_Unknown
+
+-Shadowstrike, Soldier gets an Aim and Critical Chance bonus on shots from Concealment
+AbilityName="Shadowstrike", ApplyToWeaponSlot=eInvSlot_Unknown
+
+-Shredder, Primary Weapon attacks Shred Armor
+AbilityName="Shredder",  ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Soul Harvest, Kill shots increase Crit chance by +5 up to a max of +20 (says it only works with the vektor rifle but may work with other weapons)
+AbilityName="PaleHorse", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Squadsight, Soldier can fire at any enemy unit within squad range as long as they have line of sight. Long distance shots give an aim penalty.
+AbilityName="Squadsight"
+
+-Steadyhands, Gain Aim and Crit bonus for not moving last turn (effect is lost if you move this turn)
+AbilityName="SteadyHands"
+
+-Tactical Rigging, Gives the soldier an extra utility item slot if their armor doesn't already provide one (Maybe good early game or for suits like Spider/Wraith suit)
+AbilityName="TacticalRigging"
+
+-Target Definition, units scouted by this unit will remain visible even through fog of war or loss of line of sight
+AbilityName="TargetDefinition"
+
+-Total Combat, Throwing a Grenade or using an item no longer ends the turn (better version of salvo?)
+AbilityName="TotalCombat"
+
+-Untouchable, If the soldier scores a kill, the next attack against them will miss
+AbilityName="Untouchable"
+
+-Volatile Mix, Thrown (or Launched) Grenades Deal extra damage
+AbilityName="VolatileMix",  ApplyToWeaponSlot=eInvSlot_Unknown
+
+-Waylay, Take as many overwatch shots as you have actions for (unless you run out of ammo)
+AbilityName="SkirmisherAmbush", ApplyToWeaponSlot=eInvSlot_Unknown
+
+-Zero In, Shots on the same turn provide +10 critical chance, if against the same target also provide +10 aim
+AbilityName="ZeroIn", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+02/ "Conditional Perks"
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------
+PERKS THAT REQUIRE OTHER PERKS
+
+-Highlands, carry +1 claymore
+AbilityName="Highlands"
+
+-Longwatch, Allows overwatch to work with squadsight but requires Squadsight
+AbilityName="LongWatch", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Needle, Shots from shadow have +2 armor piercing (REQUIRES SHADOW)
+AbilityName="Needle"
+
+-Silent Killer, Kills from shadow do not reveal the reaper (PROBABLY REQUIRES SHADOW as opposed to normal concealment)
+AbilityName="SilentKiller", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Sting, a Shot from Shadow (once per mission) that will not reveal the reaper (REQUIRES SHADOW)
+AbilityName="Sting", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+--------------------------------
+
+--------------------------------
+PERKS THAT REQUIRE THE CANNON
+
+-Suppression, XCOM 2 Suppression only works with the Cannon sorry :\ Hopefully Rifle Suppression will come along eventually
+AbilityName="Suppression",  ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+--------------------------------
+
+--------------------------------
+PERKS THAT REQUIRE THE CLAYMORE
+
+-Annihilate, Banish ability will move onto another target if it kills the first one until you run out of ammo or there are no targets (REQUIRES BANISH)
+AbilityName="SoulHarvester", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Distraction, Blowing up a claymore returns this soldier to shadow (probably requires shadow)
+AbilityName="Distraction"
+
+-Homing Mine, Can attach a claymore to an enemy which will explode when that enemy is damaged
+AbilityName="HomingMine"
+
+-Shrapnel, Claymores deal more damage
+AbilityName="Shrapnel"
+
+-Throw Claymore, ESSENTIAL if you have the claymore as a secondary weapon
+AbilityName="ThrowClaymore"
+--------------------------------
+
+--------------------------------
+PERKS THAT REQUIRE THE GREMLIN
+
+-Aid Protocol, send the gremlin to provide defense (cover) bonus to a nearby ally (DOES NOT HAVE TO BE SQUADDIE PERK)
+AbilityName="AidProtocol", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Capacitor Discharge, Send the gremlin to deal damage in an AoE area
+AbilityName="CapacitorDischarge",  ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Combat Protocol, Send the gremlin to damage an enemy, deals double damage to robots
+AbilityName="CombatProtocol",  ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Hack, Allows the gremlin to remotely hack stuff (Doesn't have to be squaddie perk but probably should be)
+AbilityName="IntrusionProtocol", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Haywire Protocol, Allow the gremlin to remotely hack robotic enemies
+AbilityName="HaywireProtocol",  ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Medical Protocol, Send the gremlin to remotely heal an ally, this also increases medikit charges by +1
+AbilityName="MedicalProtocol",  ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Restorative Mist, Send the Gremlin to heal every unit in your squad
+AbilityName="RestorativeMist",  ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Revival Protocol, Send the gremlin to revive an ally, recovering their condition, x1 charge per mission
+AbilityName="RevivalProtocol",  ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Scanning Protocol, Scans the area revealing hidden enemies and enemies that might be behind walls etc
+AbilityName="ScanningProtocol",  ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Threat Assessment, Upgrades Aid Protocol to apply Covering Fire to the soldier targeted (REQUIRES AID PROTOCOL)
+AbilityName="ThreatAssessment",  ApplyToWeaponSlot=eInvSlot_Unknown
+--------------------------------
+
+--------------------------------
+PERKS THAT REQUIRE THE GRENADE LAUNCHER
+
+-Heavy Ordnance, Gain +1 Grenade use to the grenade in your grenade only slot
+AbilityName="HeavyOrdnance",  ApplyToWeaponSlot=eInvSlot_Unknown
+
+-Launch Grenade, Required @Squaddie if your class uses a grenade Launcher
+AbilityName="LaunchGrenade",  ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+--------------------------------
+
+--------------------------------
+PERKS THAT REQUIRE THE PISTOL (These should also work for the Templar Sidearm)
+
+-Faceoff, Fire at every visible enemy with your pistol, I don't think this counts for Quickdraw
+AbilityName="Faceoff", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Fanfire, Fire 3 pistol shots at a target, I think this uses Quickdraw
+AbilityName="FanFire", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Fire Pistol, You basically need this @ Squaddie rank if you have a pistol, allows you to use it
+AbilityName="PistolStandardShot",  ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Lightning Hands, A free pistol shot, has a cooldown
+AbilityName="LightningHands", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Quickdraw, Allows Pistol shots to only use 1 action so you can do 2 per turn if you dont move. Combined with a non-sniper weapon you could pistol shot then standard shot also
+AbilityName="Quickdraw"
+
+-Return Fire, Allows you to shoot back at a target with the pistol once per turn when shot at
+AbilityName="ReturnFire", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+--------------------------------
+
+--------------------------------
+PERKS THAT REQUIRE THE PSI AMP
+
+-Domination, Attempts to mind control an enemy for the duration of the mission
+AbilityName="Domination",  ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Fortress, Makes the soldier immune to fire, poison, acid and explosions
+AbilityName="Fortress",  ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Fuse, Allows the soldier to detonate explosives in the field on dead or alive enemies
+AbilityName="Fuse",  ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Insanity, A roulette style attack that can cause a target to be disoriented, panicked, or mind controlled
+AbilityName="Insanity",  ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Inspire, Ends the soldiers turn but grants a bonus action to an ally
+AbilityName="Inspire",  ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-NullLance, a powerful line attack that deals damage
+AbilityName="NullLance",  ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Schism, Insanity attacks will now deal damage if they hit and also rupture a target making them take increased damage from future attacks (REQUIRES INSANITY or VOIDRIFT?)
+AbilityName="Schism",  ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Solace, The Soldier will be immune to negative mental effects and can cleanse the effects of nearby allies (even civilians on Haven assaults, allowing them to flee!)
+AbilityName="Solace",  ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Soulfire, Deal damage to an enemy, 100% hit chance
+AbilityName="Soulfire",  ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Soulsteal, Soulfire now restores some health to the Psi Operative when used (REQUIRES SOULFIRE)
+AbilityName="SoulSteal",  ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Stasis, Bubble an enemy so they can't act for 1 turn but also can't be hurt
+AbilityName="Stasis",  ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Stasis Shield, Allows stasis to be cast on allies (REQUIRES STASIS)
+AbilityName="StasisShield",  ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Sustain, If the soldier is killed they will cheat death once per mission and stasis themselves, allowing them to come back with 1 hp (however effects like poison can still kill them after)
+AbilityName="Sustain",  ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-VoidRift, Creates an AoE void that has a chance to cause insanity to enemies and also explodes dealing damage (Don't think it requires Insanity)
+AbilityName="VoidRift",  ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+--------------------------------
+
+--------------------------------
+PERKS THAT REQUIRE THE SWORD (Might also be able to use these with the Templar Gauntlets and Skirmisher Wristblades)
+
+-Blademaster, Increased Damage and Aim Chance on Sword Attacks
+AbilityName="Blademaster", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Bladestorm, Attack any enemy that moves into melee range
+AbilityName="Bladestorm", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Reaper, When active, any melee kills will not cost an action. Each kill also decreases the damage of the next attack in the chain
+AbilityName="Reaper", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Slash, Move & Slash with the Sword, Is required @ Squaddie rank for sword users
+AbilityName="SwordSlice", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+--------------------------------
+
+--------------------------------
+PERKS THAT REQUIRE THE TEMPLAR GAUNTLETS and/or the FOCUS Mechanic
+
+-ArcWave, Rend now deals damage in a small area rather than just versus 1 target
+AbilityName="ArcWavePassive", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Aftershock, enemies struck by volt are marked, giving allies +15 aim against them (REQUIRES VOLT)
+AbilityName="Reverberation"
+
+-Amplify, Marks a target increasing ally damage against them, costs 1 focus
+AbilityName="Amplify", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Bladestorm (TEMPLAR VERSION), can rend passing enemies (must grant focus?)
+AbilityName="TemplarBladestorm", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Channel, whenever an enemy dies it may drop psionic loot which can be collected by the templar to raise focus level
+AbilityName="Channel"
+
+-Deep Focus, Increase Max Focus by +1
+AbilityName="DeepFocus"
+
+-Deflect, Gives a chance to deflect damage completely, chance is basaed on focus level
+AbilityName="Deflect", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Exchange, Swap places with an XCOM ally for 1 focus
+AbilityName="TemplarExchange"
+
+-Focus, This ability is pretty much required to use any of the templar abilities
+AbilityName="TemplarFocus", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Fortress (TEMPLAR VERSION), gives immunity to fire, acid, poison and explosions
+AbilityName="Fortress", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Ghost, Create a ghost with the same stats/focus as the templar but it dies when it runs out of health or focus and needs 1 focus to rend
+AbilityName="Ghost"
+
+-Invert, Swap places with an enemy for 1 focus
+AbilityName="TemplarInvert"
+
+-Ionic Storm, Spend all focus to unleash a lighting attack in an AoE, kills from this grant focus
+AbilityName="IonicStorm", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Mentally Awake, Start missions with 1 focus
+AbilityName="MeditationPreparation"
+
+-Momentum, After Rend the templar can move (NOT SURE IF REQUIRED FOR GAUNTLETS BUT ITS AMAZING)
+AbilityName="Momentum"
+
+-Overcharge, Rend attacks have a 33% chance to generate focus (when they dont kill)
+AbilityName="Overcharge"
+
+-Parry, After rend, instead of moving stay put and block the next attack against the templar (REQUIRES MOMENTUM)
+AbilityName="Parry", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Pillar, create full cover anywhere you want, costs 1 focus
+AbilityName="Pillar"
+
+-Reaper (TEMPLAR VERSION), allows chanin melee kills with rend
+AbilityName="Reaper", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Reflect, Grants a chance to reflect shots at enemies, chance is based on focus level (REQUIRES DEFLECT)
+AbilityName="Reflect", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Rend, Required to use Templar Gauntlets, is the slash attack
+AbilityName="Rend", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Stun Strike, Chance to disorient an enemy, chance is based on focus level, costs 1 focus?
+AbilityName="Stunstrike"
+
+-Sustain (TEMPLAR VERSION), If the templar dies they will cheat death once per mission
+AbilityName="Sustain", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Void Conduit, Trap an enemy in a sort of stasis and drain health from them for the Templar, Focus level increases duration/health gained
+AbilityName="VoidConduit", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Volt, Deals damage to a target but can jump to other targets depending on focus level, costs 1 focus to use.
+AbilityName="Volt", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+--------------------------------
+
+--------------------------------
+PERKS THAT REQUIRE THE WRISTBLADES
+
+-Justice, Pull an enemy out of cover and deliver a ripjack strike
+AbilityName="Justice"
+
+-Reckoning, This is a slash attack with wristblades but at a cooldown
+AbilityName="Reckoning", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Retribution, Basically Bladestorm for Wristblades
+AbilityName="Retribution", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Whiplash, Deal damage to an enemey (free action) deals extra damage to robots, x1 use (don't know if requries Wristblades or not)
+AbilityName="Whiplash"
+
+-Wrath, Pull yourself towards an enemy and deliver a ripjack strike
+AbilityName="SkirmisherVengeance"
+--------------------------------
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+END FILE
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,1047 @@
+;************************************************************************************************************
+;XComGame.int - This File manages the names of custom classes, their descriptions & also their nicknames.
+;In Addition custom soldier rank names can be applied here if you want to differ from normal xcom.
+;************************************************************************************************************
+
+;************************************************************************************************************
+; EXAMPLE CLASS
+;************************************************************************************************************
+[ExampleTemplateClass X2SoldierClassTemplate]
+
+;This is the Name of the Class shown in the Game
++DisplayName="Guerilla"
+
+;This is the Class Description shown in the Guerilla Tactics School & Promotion Screen
++ClassSummary="Guerilla fighters are eager to take on advent, they can employ Brutal Force or Hit & Run tactics to take down the enemy. They are not to be confused with Gorillas."
+
+;These 2 lines dictate the name of the left & right ability trees show in the promotion screen (not the training centre)
++LeftAbilityTreeTitle="Hit & Run"
++RightAbilityTreeTitle="Full Frontal"
+
+;For your custom class you can apply nicknames, You can have as many as you want but I left space for 16 random ones
+;Below this you also have male & female exclusive nicknames respectively
++RandomNickNames[0]="Gorilla"
++RandomNickNames[1]="Sneaky"
++RandomNickNames[2]="Barbarian"
++RandomNickNames[3]="Warbringer"
++RandomNickNames[4]="El Dorado"
++RandomNickNames[5]="Nickname #5"
++RandomNickNames[6]="Einstein"
++RandomNickNames[7]="Russian"
++RandomNickNames[8]="Poland"
++RandomNickNames[9]="Cheese"
++RandomNickNames[10]="Mice"
++RandomNickNames[11]="Brains"
++RandomNickNames[12]="Brainss"
++RandomNickNames[13]="Brainsss"
++RandomNickNames[14]="Braainnssss"
++RandomNickNames[15]="Catch 22"
+;MALE ONLY NICKNAMES
++RandomNickNames_Male[0]="Sneaky Pete"
++RandomNickNames_Male[1]="Sneak Sam"
++RandomNickNames_Male[2]="Butterfinger"
++RandomNickNames_Male[3]="Mr Monocle"
++RandomNickNames_Male[4]="Dr Doom aka Steve"
++RandomNickNames_Male[5]="Shadow"
+;FEMALE ONLY NICKNAMES
++RandomNickNames_Female[0]="Miranda"
++RandomNickNames_Female[1]="Alice"
++RandomNickNames_Female[2]="Alize"
++RandomNickNames_Female[3]="Alissa"
++RandomNickNames_Female[4]="Ayy LMAO"
++RandomNickNames_Female[5]="2 Lzy 4 This"
+
+;If you don't like the default XCOM promotion ranks you can add your own replacements (this is on a per class basis)
++RankNames[0]="Private"
++RankNames[1]="First Class"
++RankNames[2]="Corporal"
++RankNames[3]="Lance Corporal"
++RankNames[4]="Sergeant"
++RankNames[5]="Staff Sergeant"
++RankNames[6]="Monkey"
++RankNames[7]="Ape"
+
++ShortNames[0]="Pvt."
++ShortNames[1]="PFC."
++ShortNames[2]="Cpl."
++ShortNames[3]="LCP."
++ShortNames[4]="SGT."
++ShortNames[5]="SSGT."
++ShortNames[6]="Mnk."
++ShortNames[7]="Ape."
+
+;************************************************************************************************************
+; Template Class
+;************************************************************************************************************
+[TemplateClass01 X2SoldierClassTemplate]
++DisplayName=""
++ClassSummary="."
++LeftAbilityTreeTitle=""
++RightAbilityTreeTitle=""
+;ALPHABETICAL ORDER
++RandomNickNames[0]=""
++RandomNickNames[1]=""
++RandomNickNames[2]=""
++RandomNickNames[3]=""
++RandomNickNames[4]=""
++RandomNickNames[5]=""
++RandomNickNames[6]=""
++RandomNickNames[7]=""
++RandomNickNames[8]=""
++RandomNickNames[9]=""
++RandomNickNames[10]=""
++RandomNickNames[11]=""
++RandomNickNames[12]=""
++RandomNickNames[13]=""
++RandomNickNames[14]=""
++RandomNickNames[15]=""
+;MALE ONLY NICKNAMES
++RandomNickNames_Male[0]=""
++RandomNickNames_Male[1]=""
++RandomNickNames_Male[2]=""
++RandomNickNames_Male[3]=""
++RandomNickNames_Male[4]=""
++RandomNickNames_Male[5]=""
+;FEMALE ONLY NICKNAMES
++RandomNickNames_Female[0]=""
++RandomNickNames_Female[1]=""
++RandomNickNames_Female[2]=""
++RandomNickNames_Female[3]=""
++RandomNickNames_Female[4]=""
++RandomNickNames_Female[5]=""
+
+;------------------------------------------------------------------------------------------------------------
+;RICHARD PERK DESCRIPTIONS AND WHATNOT
+;------------------------------------------------------------------------------------------------------------
+
+;************************************************************************************************************
+;Custom Perks A-Z (Except GTS)
+;************************************************************************************************************
+[ActionProtocolRS X2AbilityTemplate]
+LocFriendlyName="Action Protocol"
+LocLongDescription="Send the Gremlin to resupply a target ally, granting them +1 Action Point. <Ability:ACTIONPROTOCOLRS_CHARGES/> Charges per Mission."
+LocHelpText="Send the Gremlin to resupply a target ally, granting them +1 Action Point. <Ability:ACTIONPROTOCOLRS_CHARGES/> Charges per Mission."
+LocFlyOverText="Action Protocol"
+LocPromotionPopupText="<Bullet/>Send the Gremlin to resupply a target ally, granting them +1 Action Point. <Ability:ACTIONPROTOCOLRS_CHARGES/> Charges per Mission.<br/>"
+
+[AegisRS X2AbilityTemplate]
+LocFriendlyName="Aegis"
+LocLongDescription="Confers Fortress & Sustain. This grants the Mage immunity to the elements & allows them to cheat death once per mission."
+LocHelpText="Confers Fortress & Sustain. This grants the Mage immunity to the elements & allows them to cheat death once per mission."
+LocFlyOverText="Aegis"
+LocPromotionPopupText="<Bullet/>Confers Fortress & Sustain. This grants the Mage immunity to the elements & allows them to cheat death once per mission.<br/>"
+
+[AimAssistRS X2AbilityTemplate]
+LocFriendlyName="Aim Assist"
+LocLongDescription="Send the Gremlin to give a target ally an aerial view of the battlefied, granting them +<Ability:AIMASSISTRS_AIMBONUS/> Aim and Squadsight. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocHelpText="Send the Gremlin to give a target ally an aerial view of the battlefied, granting them +<Ability:AIMASSISTRS_AIMBONUS/> Aim and Squadsight. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocFlyOverText="Aim Assist"
+LocPromotionPopupText="<Bullet/>Send the Gremlin to give a target ally an aerial view of the battlefied, granting them +<Ability:AIMASSISTRS_AIMBONUS/> Aim and Squadsight. Has a <Ability:SELFCOOLDOWN/> turn cooldown.<br/>"
+
+[BarrierRS X2AbilityTemplate]
+LocFriendlyName="Barrier"
+LocLongDescription="Create a <Ability:BARRIERRS_HEALTH/> Hit Point Psionic Energy Shield around nearby allies. Lasts <Ability:BARRIERRS_DURATION/> turns. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocHelpText="Create a <Ability:BARRIERRS_HEALTH/> Hit Point Psionic Energy Shield around nearby allies. Lasts <Ability:BARRIERRS_DURATION/> turns. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocFlyOverText="Barrier"
+LocPromotionPopupText="<Bullet/>Create a <Ability:BARRIERRS_HEALTH/> Hit Point Psionic Energy Shield around nearby allies. Lasts <Ability:BARRIERRS_DURATION/> turns. Has a <Ability:SELFCOOLDOWN/> turn cooldown.<br/>"
+
+[BladefighterRS X2AbilityTemplate]
+LocFriendlyName="Bladefighter"
+LocLongDescription="Grants +<Ability:BLADEFIGHTERRS_AIM/> aim and +<Ability:BLADEFIGHTERRS_CRIT/> critical chance on all Melee Attacks."
+LocHelpText="Grants +<Ability:BLADEFIGHTERRS_AIM/> aim and +<Ability:BLADEFIGHTERRS_CRIT/> critical chance on all Melee Attacks."
+LocFlyOverText="Bladefighter"
+LocPromotionPopupText="<Bullet/>Grants +<Ability:BLADEFIGHTERRS_AIM/> aim and +<Ability:BLADEFIGHTERRS_CRIT/> critical chance on all Melee Attacks.<br/>"
+
+[BlitzRS X2AbilityTemplate]
+LocFriendlyName="Blitz!"
+LocLongDescription="Throw caution to the wind and dash up to an enemy to attack them close range with your sidearm. Has +<Ability:BLITZRS_CRIT/> Critical Chance."
+LocHelpText="Throw caution to the wind and dash up to an enemy to attack them close range with your sidearm. Has +<Ability:BLITZRS_CRIT/> Critical Chance."
+LocFlyOverText="Blitz!"
+LocPromotionPopupText="<Bullet/>Throw caution to the wind and dash up to an enemy to attack them close range with your sidearm. Has +<Ability:BLITZRS_CRIT/> Critical Chance.<br/>"
+
+[BoonRS X2AbilityTemplate]
+LocFriendlyName="Boon"
+LocLongDescription="Confers Restore & Solace. This allows the Mage to Heal allies from range & remove negative mental effects from nearby allies."
+LocHelpText="Confers Restore & Solace. This allows the Mage to Heal allies from range & remove negative mental effects from nearby allies."
+LocFlyOverText="Boon"
+LocPromotionPopupText="<Bullet/>Confers Restore & Solace. This allows the Mage to Heal allies from range & remove negative mental effects from nearby allies.<br/>"
+
+[BreachingRoundRS X2AbilityTemplate]
+LocFriendlyName="Breaching Round"
+LocLongDescription="A shot that doesn't deal any damage but is likely to destroy an enemies cover. Costs <Ability:SELFAMMOCOST/> ammo and has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocHelpText="A shot that doesn't deal any damage but is likely to destroy an enemies cover. Costs <Ability:SELFAMMOCOST/> ammo and has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocFlyOverText="Breaching Round"
+LocPromotionPopupText="<Bullet/>A shot that doesn't deal any damage but is likely to destroy an enemies cover. Costs <Ability:SELFAMMOCOST/> ammo and has a <Ability:SELFCOOLDOWN/> turn cooldown.<br/>"
+
+[BulletSwarmRS X2AbilityTemplate]
+LocFriendlyName="Bulletswarm"
+LocLongDescription="Allows this unit to take standard shots at the cost of 1 action point."
+LocHelpText="Fire a shot at a target. Costs 1 Action Point."
+LocFlyOverText="Bulletswarm"
+LocPromotionPopupText="<Bullet/>Allows this unit to take standard shots at the cost of 1 action point.<br/>"
+
+[BurnProtocolRS X2AbilityTemplate]
+LocFriendlyName="Burn Protocol"
+LocLongDescription="Send the Gremlin to deploy a phosphorus material over a target enemy, dealing Gremlin damage and burning a target for <Ability:BURNPROTOCOLRS_DAMAGEPERTICK/> damage per turn. <Ability:BURNPROTOCOLRS_CHARGES/> Charges per Mission."
+LocHelpText="Send the Gremlin to deploy a phosphorus material over a target enemy, dealing Gremlin damage and burning a target for <Ability:BURNPROTOCOLRS_DAMAGEPERTICK/> damage per turn. <Ability:BURNPROTOCOLRS_CHARGES/> Charges per Mission."
+LocFlyOverText="Burn Protocol"
+LocPromotionPopupText="<Bullet/>Send the Gremlin to deploy a phosphorus material over a target enemy, dealing Gremlin damage and burning a target for <Ability:BURNPROTOCOLRS_DAMAGEPERTICK/> damage per turn. <Ability:BURNPROTOCOLRS_CHARGES/> Charges per Mission.<br/>"
+
+[CapacitorDischargeRS X2AbilityTemplate]
+LocFriendlyName="Capacitor Discharge"
+LocLongDescription="Send the GREMLIN to a location where it emits a substantial electric discharge, damaging and potentially stunning all nearby units. Robotic units take more damage."
+LocHelpText="Send the GREMLIN to electrocute all units in a radius. Robotic units take more damage."
+LocFlyOverText="Capacitor Discharge"
+LocPromotionPopupText="<Bullet/> Capacitor Discharge has <Ability:CAPACITORDISCHARGERS_CHARGES/> charges per mission.<br/><Bullet/> Capacitor Discharge will deal more damage as you upgrade your GREMLIN.<br/>"
+
+[ChargeRS X2AbilityTemplate]
+LocFriendlyName="Charge!"
+LocLongDescription="Dash up to an enemy to attack them close range with your sidearm."
+LocHelpText="Dash up to an enemy to attack them close range with your sidearm."
+LocFlyOverText="Charge!"
+LocPromotionPopupText="<Bullet/>Dash up to an enemy to attack them close range with your sidearm.<br/>"
+
+[ClutchShotRS X2AbilityTemplate]
+LocFriendlyName="Clutch Shot"
+LocLongDescription="A skilled shot with your Pistol that cannot miss. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocHelpText="A skilled shot with your Pistol that cannot miss. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocFlyOverText="Clutch Shot"
+LocPromotionPopupText="<Bullet/>A skilled shot with your Pistol that cannot miss. Has a <Ability:SELFCOOLDOWN/> turn cooldown.<br/>"
+
+[CombatProtocolRS X2AbilityTemplate]
+LocFriendlyName="Combat Protocol"
+LocLongDescription="Send the GREMLIN to an enemy to jolt them, dealing guaranteed damage, which is increased against robotic enemies."
+LocHelpText="Send the GREMLIN to an enemy to jolt them, dealing guaranteed damage, which is increased against robotic enemies. Requires line of sight to the target."
+LocFlyOverText="Combat Protocol"
+LocPromotionPopupText="<Bullet/> Combat Protocol has <Ability:COMBATPROTOCOLRS_CHARGES/> charges per mission.<br/><Bullet/> Upgrading your GREMLIN will lead to more damage per charge.<br/>"
+
+[ConcealandCarryRS X2AbilityTemplate]
+LocFriendlyName="Conceal and Carry"
+LocLongDescription="Special training that allows this soldier to stay in concealment when the squad is revealed. The soldier is also harder to detect while concealed with a -40% Detection Radius & gains a single charge of conceal per mission."
+LocHelpText="Special training that allows this soldier to stay in concealment when the squad is revealed. The soldier is also harder to detect while concealed with a -40% Detection Radius & gains a single charge of conceal per mission."
+LocFlyOverText="Conceal and Carry"
+LocPromotionPopupText="<Bullet/>Special training that allows this soldier to stay in concealment when the squad is revealed. The soldier is also harder to detect while concealed with a -40% Detection Radius & gains a single charge of conceal per mission.<br/>"	
+
+[ControllerRS X2AbilityTemplate]
+LocFriendlyName="Controller"
+LocLongDescription="Confers Insanity & Psi-Reanimate. This allows the Mage to inflict negative mental effects on enemies & raise dead humanoid corpses to fight as Psi-Zombies."
+LocHelpText="Confers Insanity & Psi-Reanimate. This allows the Mage to inflict negative mental effects on enemies & raise dead humanoid corpses to fight as Psi-Zombies."
+LocFlyOverText="Controller"
+LocPromotionPopupText="<Bullet/>Confers Insanity & Psi-Reanimate. This allows the Mage to inflict negative mental effects on enemies & raise dead humanoid corpses to fight as Psi-Zombies.<br/>"
+
+[DeathMarkRS X2AbilityTemplate]
+LocFriendlyName="Death Mark"
+LocLongDescription="Marks an enemy target, graning allies +<Ability:DEATHMARKRS_CRIT/> Critical Chance against them. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocHelpText="Marks an enemy target, graning allies +<Ability:DEATHMARKRS_CRIT/> Critical Chance against them. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocFlyOverText="Death Mark"
+LocPromotionPopupText="<Bullet/>Marks an enemy target, graning allies +<Ability:DEATHMARKRS_CRIT/> Critical Chance against them. Has a <Ability:SELFCOOLDOWN/> turn cooldown.<br/>"	
+
+[DisableRS X2AbilityTemplate]
+LocFriendlyName="Disable"
+LocLongDescription="Disable enemy weapons within a large radius. Also carries a <Ability:DISABLERS_STUNCHANCE/>% chance to stun enemies within the AoE. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocHelpText="Disable enemy weapons within a large radius. Also carries a <Ability:DISABLERS_STUNCHANCE/>% chance to stun enemies within the AoE. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocFlyOverText="Disable"
+LocPromotionPopupText="<Bullet/>Disable enemy weapons within a large radius. Also carries a <Ability:DISABLERS_STUNCHANCE/>% chance to stun enemies within the AoE. Has a <Ability:SELFCOOLDOWN/> turn cooldown.<br/>"
+
+[DistortionFieldRS X2AbilityTemplate]
+LocFriendlyName="Distortion Field"
+LocLongDescription="The Technician emits a field that distrots enemy targeting slightly. Provides a +<Ability:DISTORTIONFIELDRS_DEFENSE/> Defense Bonus to the Entire Squad."
+LocHelpText="The Technician emits a field that distrots enemy targeting slightly. Provides a +<Ability:DISTORTIONFIELDRS_DEFENSE/> Defense Bonus to the Entire Squad."
+LocFlyOverText="Distortion Field"
+LocPromotionPopupText="<Bullet/>The Technician emits a field that distrots enemy targeting slightly. Provides a +<Ability:DISTORTIONFIELDRS_DEFENSE/> Defense Bonus to the Entire Squad.<br/>"
+
+[ExplosiveShotRS X2AbilityTemplate]
+LocFriendlyName="Explosive Shot"
+LocLongDescription="A shot that deals double damage and ruptures a target, making them take +<Ability:EXPLOSIVESHOTRS_RUPTURE/> damage from all future attacks. Costs <Ability:SELFAMMOCOST/> ammo and has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocHelpText="A shot that deals double damage and ruptures a target, making them take +<Ability:EXPLOSIVESHOTRS_RUPTURE/> damage from all future attacks. Costs <Ability:SELFAMMOCOST/> ammo and has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocFlyOverText="Explosive Shot"
+LocPromotionPopupText="<Bullet/>A shot that deals double damage and ruptures a target, making them take +<Ability:EXPLOSIVESHOTRS_RUPTURE/> damage from all future attacks. Costs <Ability:SELFAMMOCOST/> ammo and has a <Ability:SELFCOOLDOWN/> turn cooldown.<br/>"
+
+[ExtraConditioningRS X2AbilityTemplate]
+LocFriendlyName="Run And Gun (Extra Conditioning)"
+LocLongDescription="Take an action after dashing. Has a lower cooldown than standard Run And Gun."
+LocHelpText="Take an action after dashing."
+LocFlyOverText="Run And Gun (Extra Conditioning)"
+LocPromotionPopupText="<Bullet/>Take an action after dashing. Has a lower cooldown than standard Run And Gun.<br/>"
+
+[ExtraLayersRS X2AbilityTemplate]
+LocFriendlyName="Extra Layers"
+LocLongDescription="Extra Layers provide the soldier with +<Ability:EXTRALAYERSRS_ARMOR/> Armor Points."
+LocHelpText="Extra Layers provide the soldier with +<Ability:EXTRALAYERSRS_ARMOR/> Armor Points."
+LocFlyOverText="Extra Layers"
+LocPromotionPopupText="<Bullet/>Extra Layers provide the soldier with +<Ability:EXTRALAYERSRS_ARMOR/> Armor Points.<br/>"
+
+[ExtraSuppliesRS X2AbilityTemplate]
+LocFriendlyName="Extra Supplies"
+LocLongDescription="Carry <Ability:EXTRADARTSRS_CHARGES/> extra Healing Darts per mission."
+LocHelpText="Carry <Ability:EXTRADARTSRS_CHARGES/> extra Healing Darts per mission."
+LocFlyOverText="Extra Supplies"
+LocPromotionPopupText="<Bullet/>Carry <Ability:EXTRADARTSRS_CHARGES/> extra Healing Darts per mission.<br/>"
+
+[FireAtWillRS X2AbilityTemplate]
+LocFriendlyName="Fire at Will"
+LocLongDescription="When in Overwatch this soldier can take as many reaction shots as they have ammo for."
+LocHelpText="When in Overwatch this soldier can take as many reaction shots as they have ammo for."
+LocFlyOverText="Fire at Will"
+LocPromotionPopupText="<Bullet/>When in Overwatch this soldier can take as many reaction shots as they have ammo for.<br/>"	
+
+[FieldMedicRS X2AbilityTemplate]
+LocFriendlyName="Field Medic"
+LocLongDescription="Equipped medikits gain <Ability:FIELDMEDICRS_MEDIKITCHARGES/> extra charges."
+LocHelpText="Equipped medikits gain <Ability:FIELDMEDICRS_MEDIKITCHARGES/> extra charges."
+LocFlyOverText="Field Medic"
+LocPromotionPopupText="<Bullet/>Equipped medikits gain <Ability:FIELDMEDICRS_MEDIKITCHARGES/> extra charges.<br/>"	
+
+[FirstAiderRS X2AbilityTemplate]
+LocFriendlyName="First Aider"
+LocLongDescription="Equipped medikits gain <Ability:FIRSTAIDERRS_MEDIKITCHARGES/> extra charges."
+LocHelpText="Equipped medikits gain <Ability:FIRSTAIDERRS_MEDIKITCHARGES/> extra charges."
+LocFlyOverText="First Aider"
+LocPromotionPopupText="<Bullet/>Equipped medikits gain <Ability:FIRSTAIDERRS_MEDIKITCHARGES/> extra charges.<br/>"	
+
+[FlashFireRS X2AbilityTemplate]
+LocFriendlyName="Flash Fire"
+LocLongDescription="Take a free shot with your pistol followed up by another shot from either of your weapons, each shot carries a <Ability:FLASHFIRERS_AIM_PENALTY/> Aim Penalty. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocHelpText="Take a free shot with your pistol followed up by another shot from either of your weapons, each shot carries a <Ability:FLASHFIRERS_AIM_PENALTY/> Aim Penalty. Has a <Ability:SELFCOOLDOWN/> turn cooldown"
+LocFlyOverText="Flash Fire"
+LocPromotionPopupText="<Bullet/>Take a free shot with your pistol followed up by another shot from either of your weapons, each shot carries a <Ability:FLASHFIRERS_AIM_PENALTY/> Aim Penalty. Has a <Ability:SELFCOOLDOWN/> turn cooldown<br/>"
+
+[FlashRoundRS X2AbilityTemplate]
+LocFriendlyName="Flash Round"
+LocLongDescription="A shot that doesn't deal any damage but is likely to disorient a target. Has a +<Ability:FLASHROUNDRS_AIMBONUS/> Aim Bonus. Costs <Ability:SELFAMMOCOST/> ammo and has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocHelpText="A shot that doesn't deal any damage but is likely to disorient a target. Has a +<Ability:FLASHROUNDRS_AIMBONUS/> Aim Bonus. Costs <Ability:SELFAMMOCOST/> ammo and has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocFlyOverText="Flash Round"
+LocPromotionPopupText="<Bullet/>A shot that doesn't deal any damage but is likely to disorient a target. Has a +<Ability:FLASHROUNDRS_AIMBONUS/> Aim Bonus. Costs <Ability:SELFAMMOCOST/> ammo and has a <Ability:SELFCOOLDOWN/> turn cooldown.<br/>"
+
+[FlechetteShotRS X2AbilityTemplate]
+LocFriendlyName="Flechette Shot"
+LocLongDescription="A wide shot that is more accurate than a standard shot and has a larger spread but deals reduced damage. Costs <Ability:SELFAMMOCOST/> ammo and has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocHelpText="A wide shot that is more accurate than a standard shot and has a larger spread but deals reduced damage. Costs <Ability:SELFAMMOCOST/> ammo and has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocFlyOverText="Flechette Shot"
+LocPromotionPopupText="<Bullet/>A wide shot that is more accurate than a standard shot and has a larger spread but deals reduced damage. Costs <Ability:SELFAMMOCOST/> ammo and has a <Ability:SELFCOOLDOWN/> turn cooldown.<br/>"
+
+[FortitudeRS X2AbilityTemplate]
+LocFriendlyName="Fortitude"
+LocLongDescription="Grants +<Ability:FORTITUDERS_DEFENSE/> Defense."
+LocHelpText="Grants +<Ability:FORTITUDERS_DEFENSE/> Defense."
+LocFlyOverText="Fortitude"
+LocPromotionPopupText="<Bullet/>Grants +<Ability:FORTITUDERS_DEFENSE/> Defense.<br/>"
+
+[GatlingFireRS X2AbilityTemplate]
+LocFriendlyName="Gatling Fire"
+LocLongDescription="Unleash a volley of 3 shots at a single enemy but each shot carries a <Ability:GATLINGFIRERS_AIMPENALTY/> Aim Penalty. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocHelpText="Unleash a volley of 3 shots at a single enemy but each shot carries a <Ability:GATLINGFIRERS_AIMPENALTY/> Aim Penalty. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocFlyOverText="Gatling Fire"
+LocPromotionPopupText="<Bullet/>Unleash a volley of 3 shots at a single enemy but each shot carries a <Ability:GATLINGFIRERS_AIMPENALTY/> Aim Penalty. Has a <Ability:SELFCOOLDOWN/> turn cooldown.<br/>"
+
+[HealRS X2AbilityTemplate]
+LocFriendlyName="Heal"
+LocLongDescription="Heal an organic ally for 4 health [6 with Nanomedikits]. Must be within 2 tiles of an ally.\n"
+LocHelpText="Heal an organic ally for 4 health [6 with Nanomedikits]. Must be within 2 tiles of an ally.\n"
+
+[HealingDartsRS X2AbilityTemplate]
+LocFriendlyName="Healing Darts"
+LocLongDescription="Fire medicinal darts at an organic ally that heals them for 4 health [6 with Nanomedikits]. <Ability:HEALINGDARTSRS_CHARGES/> uses per Mission."
+LocHelpText="Fire medicinal darts at an organic ally that heals them for 4 health [6 with Nanomedikits]. <Ability:HEALINGDARTSRS_CHARGES/> uses per Mission."
+LocFlyOverText="Healing Darts"
+LocPromotionPopupText="<Bullet/>Fire medicinal darts at an organic ally that heals them for 4 health [6 with Nanomedikits]. <Ability:HEALINGDARTSRS_CHARGES/> uses per Mission.<br/>"
+
+[HideRS X2AbilityTemplate]
+LocFriendlyName="Hide"
+LocLongDescription="Allows the soldier to re-enter concealment at any time. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocHelpText="Allows the soldier to re-enter concealment at any time. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocFlyOverText="Hide"
+LocPromotionPopupText="<Bullet/>Allows the soldier to re-enter concealment at any time. Has a <Ability:SELFCOOLDOWN/> turn cooldown.<br/>"	
+
+[HipFireRS X2AbilityTemplate]
+LocFriendlyName="Hip Fire"
+LocLongDescription="Take a free shot with your <Ability:WEAPONNAME/> but at a <Ability:HIPFIRERS_PENALTY/> Aim Penalty. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocHelpText="Take a free shot with your <Ability:WEAPONNAME/> but at a <Ability:HIPFIRERS_PENALTY/> Aim Penalty. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocFlyOverText="Hip Fire"
+LocPromotionPopupText="<Bullet/>Take a free shot with your <Ability:WEAPONNAME/> but at a <Ability:HIPFIRERS_PENALTY/> Aim Penalty. Has a <Ability:SELFCOOLDOWN/> turn cooldown.<br/>"	
+
+[KillCamRS X2AbilityTemplate]
+LocFriendlyName="Kill Cam"
+LocLongDescription="Send the Gremlin to give a target ally a closer view of enemies on the battlefield, granting them +<Ability:KILLCAMRS_CRITBONUS/> Critical Chance and +<Ability:KILLCAMRS_DODGEBONUS/> Dodge. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocHelpText="Send the Gremlin to give a target ally a closer view of enemies on the battlefield, granting them +<Ability:KILLCAMRS_CRITBONUS/> Critical Chance and +<Ability:KILLCAMRS_DODGEBONUS/> Dodge. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocFlyOverText="Kill Cam"
+LocPromotionPopupText="<Bullet/>Send the Gremlin to give a target ally a closer view of enemies on the battlefield, granting them +<Ability:KILLCAMRS_CRITBONUS/> Critical Chance and +<Ability:KILLCAMRS_DODGEBONUS/> Dodge. Has a <Ability:SELFCOOLDOWN/> turn cooldown.<br/>"
+
+[LacerateRS X2AbilityTemplate]
+LocFriendlyName="Lacerate"
+LocLongDescription="Move & Deliver a fatal Slash against a target. Carries a <Ability:LACERATERS_CRITBONUS/>% crit chance & has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocHelpText="Move & Deliver a fatal Slash against a target. Carries a <Ability:LACERATERS_CRITBONUS/>% crit chance & has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocFlyOverText="Lacerate"
+LocPromotionPopupText="<Bullet/>Move & Deliver a fatal Slash against a target. Carries a <Ability:LACERATERS_CRITBONUS/>% crit chance & has a <Ability:SELFCOOLDOWN/> turn cooldown.<br/>"
+
+[LifeSaverRS X2AbilityTemplate]
+LocFriendlyName="Life Saver"
+LocLongDescription="Heal an organic ally for 4 health [6 with Nanomedikits]. Is a Free Action that can be used within 2 tiles of an ally. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocHelpText="Heal an organic ally for 4 health [6 with Nanomedikits]. Is a Free Action that can be used within 2 tiles of an ally. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocFlyOverText="Life Saver"
+LocPromotionPopupText="<Bullet/>Heal an organic ally for 4 health [6 with Nanomedikits]. Is a Free Action that can be used within 2 tiles of an ally. Has a <Ability:SELFCOOLDOWN/> turn cooldown.<br/>"
+
+[LongReachRS X2AbilityTemplate]
+LocFriendlyName="Long Reach"
+LocLongDescription="Confers Squadsight & Long Watch."
+LocHelpText="Confers Squadsight & Long Watch."
+LocFlyOverText="Long Reach"
+LocPromotionPopupText="<Bullet/>Confers Squadsight & Long Watch.<br/>"
+
+[MakeItCountRS X2AbilityTemplate]
+LocFriendlyName="Make It Count"
+LocLongDescription="Grants +<Ability:MAKEITCOUNTRS_AIMBONUS/> Aim on Overwatch Shots."
+LocHelpText="Grants +<Ability:MAKEITCOUNTRS_AIMBONUS/> Aim on Overwatch Shots."
+LocFlyOverText="Make It Count"
+LocPromotionPopupText="<Bullet/>Grants +<Ability:MAKEITCOUNTRS_AIMBONUS/> Aim on Overwatch Shots.<br/>"	
+
+[MalaiseRS X2AbilityTemplate]
+LocFriendlyName="Malaise"
+LocLongDescription="Conjures a cloud of Poison and Misery at a target location. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocHelpText="Conjures a cloud of Poison and Misery at a target location. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocFlyOverText="Malaise"
+LocPromotionPopupText="<Bullet/>Conjures a cloud of Poison and Misery at a target location. Has a <Ability:SELFCOOLDOWN/> turn cooldown.<br/>"	
+
+[MarkTargetRS X2AbilityTemplate]
+LocFriendlyName="Mark Target"
+LocLongDescription="Marks an enemy target, graning allies +<Ability:MARKTARGETRS_HIT/> Aim Chance against them. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocHelpText="Marks an enemy target, graning allies +<Ability:MARKTARGETRS_HIT/> Aim Chance against them. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocFlyOverText="Mark Target"
+LocPromotionPopupText="<Bullet/>Marks an enemy target, graning allies +<Ability:MARKTARGETRS_HIT/> Aim Chance against them. Has a <Ability:SELFCOOLDOWN/> turn cooldown.<br/>"	
+
+[MercilessRS X2AbilityTemplate]
+LocFriendlyName="Merciless"
+LocLongDescription="Grants +<Ability:MERCILESSRS_DMG/> damage and +<Ability:MERCILESSRS_CRIT/> critical chance on all Melee Attacks."
+LocHelpText="Grants +<Ability:MERCILESSRS_DMG/> damage and +<Ability:MERCILESSRS_CRIT/> critical chance on all Melee Attacks."
+LocFlyOverText="Merciless"
+LocPromotionPopupText="<Bullet/>Grants +<Ability:MERCILESSRS_DMG/> damage and +<Ability:MERCILESSRS_CRIT/> critical chance on all Melee Attacks.<br/>"
+
+[MiseryRS X2AbilityTemplate]
+LocFriendlyName="Misery"
+LocLongDescription="Confers Malaise & Soul Steal. This allows the Mage to conjure a toxic cloud & enables Soulfire to absorb health from enemies."
+LocHelpText="Confers Malaise & Soul Steal. This allows the Mage to conjure a toxic cloud & enables Soulfire to absorb health from enemies."
+LocFlyOverText="Misery"
+LocPromotionPopupText="<Bullet/>Confers Malaise & Soul Steal. This allows the Mage to conjure a toxic cloud & enables Soulfire to absorb health from enemies.<br/>"
+
+[MuteRS X2AbilityTemplate]
+LocFriendlyName="Mute"
+LocLongDescription="Grants <Ability:MUTERS_CHARGES/> additional charges of Stillness per mission."
+LocHelpText="Grants <Ability:MUTERS_CHARGES/> additional charges of Stillness per mission."
+LocFlyOverText="Mute"
+LocPromotionPopupText="<Bullet/>Grants <Ability:MUTERS_CHARGES/> additional charges of Stillness per mission.<br/>"
+
+[OverchargeRS X2AbilityTemplate]
+LocFriendlyName="Overcharge"
+LocLongDescription="Increases the charges of all the Gremlin abilities that have charges by +<Ability:OVERCHARGERS_CHARGES/>."
+LocHelpText="Increases the charges of all the Gremlin abilities that have charges by +<Ability:OVERCHARGERS_CHARGES/>."
+LocFlyOverText="Overcharge"
+LocPromotionPopupText="<Bullet/>Increases the charges of all the Gremlin abilities that have charges by +<Ability:OVERCHARGERS_CHARGES/>.<br/>"	
+
+[OverdriveRS X2AbilityTemplate]
+LocFriendlyName="Overdrive"
+LocLongDescription="Forces the soldier to push on, graning them +1 Action Point. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocHelpText="Forces the soldier to push on, graning them +1 Action Point. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocFlyOverText="Overdrive"
+LocPromotionPopupText="<Bullet/>Forces the soldier to push on, graning them +1 Action Point. Has a <Ability:SELFCOOLDOWN/> turn cooldown.<br/>"	
+
+[ParamedicRS X2AbilityTemplate]
+LocFriendlyName="Paramedic"
+LocLongDescription="Equipped medikits gain <Ability:PARAMEDICRS_MEDIKITCHARGES/> extra charges."
+LocHelpText="Equipped medikits gain <Ability:PARAMEDICRS_MEDIKITCHARGES/> extra charges."
+LocFlyOverText="Paramedic"
+LocPromotionPopupText="<Bullet/>Equipped medikits gain <Ability:PARAMEDICRS_MEDIKITCHARGES/> extra charges.<br/>"	
+
+[PotShotRS X2AbilityTemplate]
+LocFriendlyName="Pot Shot"
+LocLongDescription="A free shot with your Pistol that deals extra damage but carries a <Ability:POTSHOTRS_AIM_PENALTY/> Aim Penalty. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocHelpText="A free shot with your Pistol that deals extra damage but carries a <Ability:POTSHOTRS_AIM_PENALTY/> Aim Penalty. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocFlyOverText="Pot Shot"
+LocPromotionPopupText="<Bullet/>A free shot with your Pistol that deals extra damage but carries a <Ability:POTSHOTRS_AIM_PENALTY/> Aim Penalty. Has a <Ability:SELFCOOLDOWN/> turn cooldown.<br/>"
+
+[ProtectorRS X2AbilityTemplate]
+LocFriendlyName="Protector"
+LocLongDescription="Confers Stasis & Stasis Shield. This allows the Mage to cast Stasis on allies & enemies, making them immune to damage but unable to act for 1 turn."
+LocHelpText="Confers Stasis & Stasis Shield. This allows the Mage to cast Stasis on allies & enemies, making them immune to damage but unable to act for 1 turn."
+LocFlyOverText="Protector"
+LocPromotionPopupText="<Bullet/>Confers Stasis & Stasis Shield. This allows the Mage to cast Stasis on allies & enemies, making them immune to damage but unable to act for 1 turn.<br/>"
+
+[PsiReanimateRS X2AbilityTemplate]
+LocFriendlyName="Psi-Reanimate"
+LocLongDescription="Reanimate the corpse of a fallen humanoid target into a Zombie under your control. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocHelpText="Reanimate the corpse of a fallen humanoid target into a Zombie under your control. Has a <Ability:SELFCOOLDOWN/> turn cooldown.. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocFlyOverText="Psi-Reanimate"
+LocPromotionPopupText="<Bullet/>Reanimate the corpse of a fallen humanoid target into a Zombie under your control. Has a <Ability:SELFCOOLDOWN/> turn cooldown.. Has a <Ability:SELFCOOLDOWN/> turn cooldown.<br/>"
+
+[PuglistRS X2AbilityTemplate]
+LocFriendlyName="Puglist"
+LocLongDescription="Grants +<Ability:PUGLISTRS_DMGBONUS/> Damage and +<Ability:PUGLISTRS_AIMBONUS/> Aim on melee attacks."
+LocHelpText="Grants +<Ability:PUGLISTRS_DMGBONUS/> Damage and +<Ability:PUGLISTRS_AIMBONUS/> Aim on melee attacks."
+LocFlyOverText="Puglist"
+LocPromotionPopupText="<Bullet/>Grants +<Ability:PUGLISTRS_DMGBONUS/> Damage and +<Ability:PUGLISTRS_AIMBONUS/> Aim on melee attacks.<br/>"
+
+[PunisherRS X2AbilityTemplate]
+LocFriendlyName="Punisher"
+LocLongDescription="Allows melee attacks to deal critical damage, granting +<Ability:PUNISHERRS_CRITBONUS/> chance to do so."
+LocHelpText="Allows melee attacks to deal critical damage, granting +<Ability:PUNISHERRS_CRITBONUS/> chance to do so."
+LocFlyOverText="Punisher"
+LocPromotionPopupText="<Bullet/>Allows melee attacks to deal critical damage, granting +<Ability:PUNISHERRS_CRITBONUS/> chance to do so.<br/>"
+
+[RepairProtocolRS X2AbilityTemplate]
+LocFriendlyName="Repair Protocol"
+LocLongDescription="Send the Gremlin to Repair a robotic ally, restoring <Ability:REPAIRPROTOCOLRS_AMOUNTREPAIRED/> hit points. <Ability:REPAIRPROTOCOLRS_CHARGES/> Charges per Mission."
+LocHelpText="Send the Gremlin to Repair a robotic ally, restoring <Ability:REPAIRPROTOCOLRS_AMOUNTREPAIRED/> hit points. <Ability:REPAIRPROTOCOLRS_CHARGES/> Charges per Mission."
+LocFlyOverText="Repair Protocol"
+LocPromotionPopupText="<Bullet/>Send the Gremlin to Repair a robotic ally, restoring <Ability:REPAIRPROTOCOLRS_AMOUNTREPAIRED/> hit points. <Ability:REPAIRPROTOCOLRS_CHARGES/> Charges per Mission.<br/>"
+
+[RestoreRS X2AbilityTemplate]
+LocFriendlyName="Restore"
+LocLongDescription="Heals a target ally for <Ability:RESTORERS_HEAL/> Hit Points and fully Restores their condition. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocHelpText="Heals a target ally for <Ability:RESTORERS_HEAL/> Hit Points and fully Restores their condition. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocFlyOverText="Restore"
+LocPromotionPopupText="<Bullet/>Heals a target ally for <Ability:RESTORERS_HEAL/> Hit Points and fully Restores their condition. Has a <Ability:SELFCOOLDOWN/> turn cooldown.<br/>"
+
+[RevitalizeRS X2AbilityTemplate]
+LocFriendlyName="Revitalize"
+LocLongDescription="Restore <Ability:REVITALIZERS_ACTIONPOINTSRESTORED/> Action Points to nearby allies. Free Action that can be used <Ability:REVITALIZERS_CHARGES/> times per mission."
+LocHelpText="Restore <Ability:REVITALIZERS_ACTIONPOINTSRESTORED/> Action Points to nearby allies. Free Action that can be used <Ability:REVITALIZERS_CHARGES/> times per mission."
+LocFlyOverText="Revitalize"
+LocPromotionPopupText="<Bullet/>Restore <Ability:REVITALIZERS_ACTIONPOINTSRESTORED/> Action Points to nearby allies. Free Action that can be used <Ability:REVITALIZERS_CHARGES/> times per mission.<br/>"
+
+[ReviveRS X2AbilityTemplate]
+LocFriendlyName="Revive"
+LocLongDescription="Cleanse an ally of any negative mental effects or revive them from an Unconscious state. Must be within 2 tiles of an ally & has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocHelpText="Cleanse an ally of any negative mental effects or revive them from an Unconscious state. Must be within 2 tiles of an ally & has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocFlyOverText="Revive"
+LocPromotionPopupText="<Bullet/>Cleanse an ally of any negative mental effects or revive them from an Unconscious state. Must be within 2 tiles of an ally & has a <Ability:SELFCOOLDOWN/> turn cooldown.<br/>"
+
+[RushRS X2AbilityTemplate]
+LocFriendlyName="Rush!"
+LocLongDescription="Dash up to an enemy to attack them close range with your sidearm, then take advantage of the confusion and take another action. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocHelpText="Dash up to an enemy to attack them close range with your sidearm, then take advantage of the confusion and take another action. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocFlyOverText="Rush!"
+LocPromotionPopupText="<Bullet/>Dash up to an enemy to attack them close range with your sidearm, then take advantage of the confusion and take another action. Has a <Ability:SELFCOOLDOWN/> turn cooldown.<br/>"
+
+[SapperRS X2AbilityTemplate]
+LocFriendlyName="Sapper"
+LocLongDescription="Your grenades deal +<Ability:SAPPERRS_DMGBONUS/> damage."
+LocHelpText="Your grenades deal +<Ability:SAPPERRS_DMGBONUS/> damage."
+LocFlyOverText="Sapper"
+LocPromotionPopupText="<Bullet/>Your grenades deal +<Ability:SAPPERRS_DMGBONUS/> damage.<br/>"
+
+[ScanningProtocolRS X2AbilityTemplate]
+LocFriendlyName="Scanning Protocol"
+LocLongDescription="The GREMLIN can trigger an instant scan of the area, increasing the Specialist's sight radius substantially for one turn, and revealing any hidden or disguised enemies in view."
+LocHelpText="Trigger a GREMLIN scan of the area, increasing the your sight radius substantially for one turn, and revealing any hidden or disguised enemies in view."
+LocFlyOverText="Scanning Protocol"
+LocPromotionPopupText="<Bullet/> Scanning Protocol has <Ability:SCANNINGPROTOCOLRS_CHARGES/> charges per mission.<br/><Bullet/> In addition to hidden and disguised enemies, enemies blocked from line of sight by walls or obstructions will also be revealed by Scanning Protocol.<br/>"
+
+[SeekandDestroyRS X2AbilityTemplate]
+LocFriendlyName="Seek and Destroy"
+LocLongDescription="Gives a <Ability:SEEKANDDESTROYRS_CHANCE/>% chance to take a free reaction shot at newly revealed enemies when not concealed."
+LocHelpText="Gives a <Ability:SEEKANDDESTROYRS_CHANCE/>% chance to take a free reaction shot at newly revealed enemies when not concealed."
+LocFlyOverText="Seek and Destroy"
+LocPromotionPopupText="<Bullet/>Gives a <Ability:SEEKANDDESTROYRS_CHANCE/>% chance to take a free reaction shot at newly revealed enemies when not concealed.<br/>"
+
+[ShadeProtocolRS X2AbilityTemplate]
+LocFriendlyName="Shade Protocol"
+LocLongDescription="Send the Gremlin to shroud a target ally from enemy view, granting them +<Ability:SHADEPROTOCOLRS_MOBILITYBONUS/> Mobility and Shadowstep. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocHelpText="Send the Gremlin to shroud a target ally from enemy view, granting them +<Ability:SHADEPROTOCOLRS_MOBILITYBONUS/> Mobility and Shadowstep. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocFlyOverText="Shade Protocol"
+LocPromotionPopupText="<Bullet/>Send the Gremlin to shroud a target ally from enemy view, granting them +<Ability:SHADEPROTOCOLRS_MOBILITYBONUS/> Mobility and Shadowstep. Has a <Ability:SELFCOOLDOWN/> turn cooldown.<br/>"
+
+[ShadowShotRS X2AbilityTemplate]
+LocFriendlyName="Shadow Shot"
+LocLongDescription="A shot from concealment with your Pistol that if it kills an enemy you will not be revealed. Has a +<Ability:SHADOWSHOTRS_AIM_BONUS/> Aim and +<Ability:SHADOWSHOTRS_CRIT_BONUS/> Critical Chance Bonus. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocHelpText="A shot from concealment with your Pistol that if it kills an enemy you will not be revealed. Has a +<Ability:SHADOWSHOTRS_AIM_BONUS/> Aim and +<Ability:SHADOWSHOTRS_CRIT_BONUS/> Critical Chance Bonus. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocFlyOverText="Shadow Shot"
+LocPromotionPopupText="<Bullet/>A shot from concealment with your Pistol that if it kills an enemy you will not be revealed. Has a +<Ability:SHADOWSHOTRS_AIM_BONUS/> Aim and +<Ability:SHADOWSHOTRS_CRIT_BONUS/> Critical Chance Bonus. Has a <Ability:SELFCOOLDOWN/> turn cooldown.<br/>"
+
+[ShockProtocolRS X2AbilityTemplate]
+LocFriendlyName="Shock Protocol"
+LocLongDescription="Send the Gremlin to shock a target enemy, stunning them for <Ability:SHOCKPROTOCOLRS_STUNDURATION/> turns. <Ability:SHOCKPROTOCOLRS_CHARGES/> Charges per Mission."
+LocHelpText="Send the Gremlin to shock a target enemy, stunning them for <Ability:SHOCKPROTOCOLRS_STUNDURATION/> turns. <Ability:SHOCKPROTOCOLRS_CHARGES/> Charges per Mission."
+LocFlyOverText="Shock Protocol"
+LocPromotionPopupText="<Bullet/>Send the Gremlin to shock a target enemy, stunning them for <Ability:SHOCKPROTOCOLRS_STUNDURATION/> turns. <Ability:SHOCKPROTOCOLRS_CHARGES/> Charges per Mission.<br/>"
+
+[ShredderBlastRS X2AbilityTemplate]
+LocFriendlyName="Shredder Blast"
+LocLongDescription="A wide shot that damages cover and enemies. Costs <Ability:SELFAMMOCOST/> ammo and has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocHelpText="A wide shot that damages cover and enemies. Costs <Ability:SELFAMMOCOST/> ammo and has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocFlyOverText="Shredder Blast"
+LocPromotionPopupText="<Bullet/>A wide shot that damages cover and enemies. Costs <Ability:SELFAMMOCOST/> ammo and has a <Ability:SELFCOOLDOWN/> turn cooldown.<br/>"
+
+[SidearmSpecialistRS X2AbilityTemplate]
+LocFriendlyName="Sidearm Specialist"
+LocLongDescription="Grants +<Ability:SIDEARMSPECIALISTRS_DMGBONUS/> damage with secondary weapon attacks. Sword attacks also gain +<Ability:SIDEARMSPECIALISTRS_AIMBONUS/> aim along with any charge attacks."
+LocHelpText="Grants +<Ability:SIDEARMSPECIALISTRS_DMGBONUS/> damage with secondary weapon attacks. Sword attacks also gain +<Ability:SIDEARMSPECIALISTRS_AIMBONUS/> aim along with any charge attacks."
+LocFlyOverText="Sidearm Specialist"
+LocPromotionPopupText="<Bullet/>Grants +<Ability:SIDEARMSPECIALISTRS_DMGBONUS/> damage with secondary weapon attacks. Sword attacks also gain +<Ability:SIDEARMSPECIALISTRS_AIMBONUS/> aim along with any charge attacks.<br/>"
+
+[SilenceRS X2AbilityTemplate]
+LocFriendlyName="Silence"
+LocLongDescription="A shot that doesn't break concealment. Requires both actions to fire and has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocHelpText="A shot that doesn't break concealment. Requires both actions to fire and has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocFlyOverText="Silence"
+LocPromotionPopupText="<Bullet/>A shot that doesn't break concealment. Requires both actions to fire and has a <Ability:SELFCOOLDOWN/> turn cooldown.<br/>"
+
+[Slash_RS X2AbilityTemplate]
+LocFriendlyName="Slice"
+LocLongDescription="Attack an adjacent target with your sword. Uses one action."
+LocHelpText="Attack an adjacent target with your sword. Uses one action."
+LocFlyOverText="Slice"
+LocPromotionPopupText="<Bullet/> Attack an adjacent target with your sword.<br/><Bullet/> Uses one action and doesn't automatically end your turn, so two attacks a turn are possible."
+
+[SlashAndDashRS X2AbilityTemplate]
+LocFriendlyName="Run And Slice"
+LocLongDescription="Move & Slice a target. Uses one action but can only be used once per turn. (Replaces Slice)"
+LocHelpText="Move & Slice a target. Uses one action but can only be used once per turn."
+LocFlyOverText="Run And Slice"
+LocPromotionPopupText="<Bullet/>Move & Slice a target. Uses one action but can only be used once per turn. (Replaces Slice)<br/>"
+
+[SnapShotRS X2AbilityTemplate]
+LocFriendlyName="Snapshot"
+LocLongDescription="Take a shot after moving with the Sniper Rifle. Confers a <Ability:SNAPSHOTRS_PENALTY_AIM/> Aim and <Ability:SNAPSHOTRS_PENALTY_CRIT/> Critical Chance Penalty."
+LocHelpText="Take a shot after moving with the Sniper Rifle. Confers a <Ability:SNAPSHOTRS_PENALTY_AIM/> Aim and <Ability:SNAPSHOTRS_PENALTY_CRIT/> Critical Chance Penalty."
+LocFlyOverText="Snapshot"
+LocPromotionPopupText="<Bullet/>Take a shot after moving with the Sniper Rifle. Confers a <Ability:SNAPSHOTRS_PENALTY_AIM/> Aim and <Ability:SNAPSHOTRS_PENALTY_CRIT/> Critical Chance Penalty.<br/>"
+
+[StabilizeRS X2AbilityTemplate]
+LocFriendlyName="Stabilize"
+LocLongDescription="Stop a soldier from bleeding out. Must be within 2 tiles of an ally."
+LocHelpText="Stop a soldier from bleeding out. Must be within 2 tiles of an ally."
+LocFlyOverText="Stabilized"
+
+[StickAndMoveRS X2AbilityTemplate]
+LocFriendlyName="Stick and Move"
+LocLongDescription="Grants +<Ability:STICKANDMOVERS_DEFENSE/> Defense and +<Ability:STICKANDMOVERS_MOBILITY/> Mobility."
+LocHelpText="Grants +<Ability:STICKANDMOVERS_DEFENSE/> Defense and +<Ability:STICKANDMOVERS_MOBILITY/> Mobility."
+LocFlyOverText="Stick and Move"
+LocPromotionPopupText="<Bullet/>Grants +<Ability:STICKANDMOVERS_DEFENSE/> Defense and +<Ability:STICKANDMOVERS_MOBILITY/> Mobility.<br/>"
+
+[StillnessRS X2AbilityTemplate]
+LocFriendlyName="Stillness"
+LocLongDescription="Stillness allows this soldier to remain concealed when the squad is revealed. The soldier is also harder to detect while concealed with a -80% Detection Radius & can return to stillness <Ability:STILLNESSRS_CHARGES/> times per mission."
+LocHelpText="Stillness allows this soldier to remain concealed when the squad is revealed. The soldier is also harder to detect while concealed with a -80% Detection Radius & can return to stillness <Ability:STILLNESSRS_CHARGES/> times per mission."
+LocFlyOverText="Stillness"
+LocPromotionPopupText="<Bullet/>Stillness allows this soldier to remain concealed when the squad is revealed. The soldier is also harder to detect while concealed with a -80% Detection Radius & can return to stillness <Ability:STILLNESSRS_CHARGES/> times per mission.<br/>"
+
+[StillnessRSCharges X2AbilityTemplate]
+LocFriendlyName="Stillness"
+LocLongDescription="Allows the soldier to re-enter concealment at any time."
+LocHelpText="Allows the soldier to re-enter concealment at any time."
+
+[StormPositionRS X2AbilityTemplate]
+LocFriendlyName="Storm Position"
+LocLongDescription="Assault an enemy position and attack them close range with your primary weapon. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocHelpText="Assault an enemy position and attack them close range with your primary weapon. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocFlyOverText="Storm Position"
+LocPromotionPopupText="<Bullet/>Assault an enemy position and attack them close range with your primary weapon. Has a <Ability:SELFCOOLDOWN/> turn cooldown.<br/>"
+
+[SurpriseShotRS X2AbilityTemplate]
+LocFriendlyName="Surprise Shot"
+LocLongDescription="A special shot with your Pistol that stuns an enemy for <Ability:SURPRISESHOTRS_STUN_TURNS/> turns. If the shot kills an enemy while you are concealed you will not be revealed. Has a +<Ability:SURPRISESHOTRS_AIM_BONUS/> Aim and +<Ability:SURPRISESHOTRS_CRIT_BONUS/> Critical Chance Bonus. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocHelpText="A special shot with your Pistol that stuns an enemy for <Ability:SURPRISESHOTRS_STUN_TURNS/> turns. If the shot kills an enemy while you are concealed you will not be revealed. Has a +<Ability:SURPRISESHOTRS_AIM_BONUS/> Aim and +<Ability:SURPRISESHOTRS_CRIT_BONUS/> Critical Chance Bonus. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocFlyOverText="Surprise Shot"
+LocPromotionPopupText="<Bullet/>A special shot with your Pistol that stuns an enemy for <Ability:SURPRISESHOTRS_STUN_TURNS/> turns. If the shot kills an enemy while you are concealed you will not be revealed. Has a +<Ability:SURPRISESHOTRS_AIM_BONUS/> Aim and +<Ability:SURPRISESHOTRS_CRIT_BONUS/> Critical Chance Bonus. Has a <Ability:SELFCOOLDOWN/> turn cooldown.<br/>"
+
+[SWATShieldRS X2AbilityTemplate]
+LocFriendlyName="Personal Shield"
+LocLongDescription="Activate a <Ability:SWATSHIELDRS_SHIELDPOINTS/> Hit Point Energy Shield around yourself that lasts for <Ability:SWATSHIELDRS_DURATION/> turns. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocHelpText="Activate a <Ability:SWATSHIELDRS_SHIELDPOINTS/> Hit Point Energy Shield around yourself that lasts for <Ability:SWATSHIELDRS_DURATION/> turns. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocFlyOverText="Personal Shield"
+LocPromotionPopupText="<Bullet/>Activate a <Ability:SWATSHIELDRS_SHIELDPOINTS/> Hit Point Energy Shield around yourself that lasts for <Ability:SWATSHIELDRS_DURATION/> turns. Has a <Ability:SELFCOOLDOWN/> turn cooldown.<br/>"
+
+[SWATStrikeRS X2AbilityTemplate]
+LocFriendlyName="Strike"
+LocLongDescription="A melee attack that lets the soldier dash up to their target and strike them with their <Ability:WEAPONNAME/>."
+LocHelpText="A melee attack that lets the soldier dash up to their target and strike them with their <Ability:WEAPONNAME/>."
+LocFlyOverText="Strike"
+LocPromotionPopupText="<Bullet/>A melee attack that lets the soldier dash up to their target and strike them with their <Ability:WEAPONNAME/>.<br/>"
+
+[SWATTakedownRS X2AbilityTemplate]
+LocFriendlyName="Takedown"
+LocLongDescription="A melee attack that lets the soldier dash up to their target and strike them with their <Ability:WEAPONNAME/>. Has a <Ability:SWATTAKEDOWNRS_STUNCHANCE/>% chance to Stun an enemy for <Ability:SWATTAKEDOWNRS_STUNDURATION/> turns."
+LocHelpText="A melee attack that lets the soldier dash up to their target and strike them with their <Ability:WEAPONNAME/>. Has a <Ability:SWATTAKEDOWNRS_STUNCHANCE/>% chance to Stun an enemy for <Ability:SWATTAKEDOWNRS_STUNDURATION/> turns."
+LocFlyOverText="Takedown"
+LocPromotionPopupText="<Bullet/>A melee attack that lets the soldier dash up to their target and strike them with their <Ability:WEAPONNAME/>. Has a <Ability:SWATTAKEDOWNRS_STUNCHANCE/>% chance to Stun an enemy for <Ability:SWATTAKEDOWNRS_STUNDURATION/> turns.<br/>"
+
+[TeleportRS X2AbilityTemplate]
+LocFriendlyName="Teleport"
+LocLongDescription="Teleport to another location within squadsight once per turn."
+LocHelpText="Teleport to another location within squadsight once per turn."
+LocFlyOverText="Teleport"
+LocPromotionPopupText="<Bullet/>Teleport to another location within squadsight once per turn.<br/>"
+
+[TendWoundedRS X2AbilityTemplate]
+LocFriendlyName="Tend Wounded"
+LocLongDescription="Heal all organic allies within a 2 tile AoE for 4 health [6 with Nanomedikits]. Affects the user & any allies within 2 tiles. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocHelpText="Heal all organic allies within a 2 tile AoE for 4 health [6 with Nanomedikits]. Affects the user & any allies within 2 tiles. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocFlyOverText="Tend Wounded"
+LocPromotionPopupText="<Bullet/>Heal all organic allies within a 2 tile AoE for 4 health [6 with Nanomedikits]. Affects the user & any allies within 2 tiles. Has a <Ability:SELFCOOLDOWN/> turn cooldown.<br/>"
+
+[VanishRS X2AbilityTemplate]
+LocFriendlyName="Vanish"
+LocLongDescription="Move anywhere within squadsight. Ends this soldiers turn and uses charges of Stillness. (Doesn't break concealment)"
+LocHelpText="Move anywhere within squadsight. Ends this soldiers turn and uses charges of Stillness. (Doesn't break concealment)"
+LocFlyOverText="Vanish"
+LocPromotionPopupText="<Bullet/>Move anywhere within squadsight. Ends this soldiers turn and uses charges of Stillness. (Doesn't break concealment)<br/>"
+
+[VoidmasterRS X2AbilityTemplate]
+LocFriendlyName="Voidmaster"
+LocLongDescription="Confers Void Rift & Schism. This allows the Mage to inflict negative mental effects in an AoE & enables Insanity to deal damage along with a rupture effect."
+LocHelpText="Confers Void Rift & Schism. This allows the Mage to inflict negative mental effects in an AoE & enables Insanity to deal damage along with a rupture effect."
+LocFlyOverText="Voidmaster"
+LocPromotionPopupText="<Bullet/>Confers Void Rift & Schism. This allows the Mage to inflict negative mental effects in an AoE & enables Insanity to deal damage along with a rupture effect.<br/>"
+
+[WalkFireRS X2AbilityTemplate]
+LocFriendlyName="Walk Fire"
+LocLongDescription="A <Ability:WEAPONNAME/> shot that is easier to hit but has less chance to crit. Has a +<Ability:WALKFIRERS_AIM/> Aim Bonus, a <Ability:WALKFIRERS_CRIT/> Crit Penalty, costs <Ability:SELFAMMOCOST/> ammo and has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocHelpText="A <Ability:WEAPONNAME/> shot that is easier to hit but has less chance to crit. Has a +<Ability:WALKFIRERS_AIM/> Aim Bonus, a <Ability:WALKFIRERS_CRIT/> Crit Penalty, costs <Ability:SELFAMMOCOST/> ammo and has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocFlyOverText="Walk Fire"
+LocPromotionPopupText="<Bullet/>A <Ability:WEAPONNAME/> shot that is easier to hit but has less chance to crit. Has a +<Ability:WALKFIRERS_AIM/> Aim Bonus, a <Ability:WALKFIRERS_CRIT/> Crit Penalty, costs <Ability:SELFAMMOCOST/> ammo and has a <Ability:SELFCOOLDOWN/> turn cooldown.<br/>"	
+
+[WarningShotRS X2AbilityTemplate]
+LocFriendlyName="Warning Shot"
+LocLongDescription="Fire a <Ability:WEAPONNAME/> shot close to an enemy that doesn't deal any damage but can make them Panic. Has a +<Ability:WARNINGSHOTRS_AIMBONUS/> Aim Bonus. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocHelpText="Fire a <Ability:WEAPONNAME/> shot close to an enemy that doesn't deal any damage but can make them Panic. Has a +<Ability:WARNINGSHOTRS_AIMBONUS/> Aim Bonus. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocFlyOverText="Warning Shot"
+LocPromotionPopupText="<Bullet/>Fire a <Ability:WEAPONNAME/> shot close to an enemy that doesn't deal any damage but can make them Panic. Has a +<Ability:WARNINGSHOTRS_AIMBONUS/> Aim Bonus. Has a <Ability:SELFCOOLDOWN/> turn cooldown.<br/>"	
+
+[WeaponExpertRS X2AbilityTemplate]
+LocFriendlyName="Weapon Expert"
+LocLongDescription="Deal +<Ability:WEAPONEXPERTRS_DMGBONUS/> damage with primary weapon attacks."
+LocHelpText="Deal +<Ability:WEAPONEXPERTRS_DMGBONUS/> damage with primary weapon attacks."
+LocFlyOverText="Weapon Expert"
+LocPromotionPopupText="<Bullet/>Deal +<Ability:WEAPONEXPERTRS_DMGBONUS/> damage with primary weapon attacks.<br/>"
+
+[WeaponSpecialistRS X2AbilityTemplate]
+LocFriendlyName="Weapon Specialist"
+LocLongDescription="Deal +<Ability:WEAPONSPECIALISTRS_DMGBONUS/> damage with primary weapon attacks."
+LocHelpText="Deal +<Ability:WEAPONSPECIALISTRS_DMGBONUS/> damage with primary weapon attacks."
+LocFlyOverText="Weapon Specialist"
+LocPromotionPopupText="<Bullet/>Deal +<Ability:WEAPONSPECIALISTRS_DMGBONUS/> damage with primary weapon attacks.<br/>"
+
+[WoundingShotRS X2AbilityTemplate]
+LocFriendlyName="Wounding Shot"
+LocLongDescription="A special shot with your Pistol that ruptures a target, making them take +<Ability:WOUNDINGSHOTRS_RUPTURE/> damage from all future attacks. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocHelpText="A special shot with your Pistol that ruptures a target, making them take +<Ability:WOUNDINGSHOTRS_RUPTURE/> damage from all future attacks. Has a <Ability:SELFCOOLDOWN/> turn cooldown."
+LocFlyOverText="Wounding Shot"
+LocPromotionPopupText="<Bullet/>A special shot with your Pistol that ruptures a target, making them take +<Ability:WOUNDINGSHOTRS_RUPTURE/> damage from all future attacks. Has a <Ability:SELFCOOLDOWN/> turn cooldown.<br/>"
+
+[ZeroInRS X2AbilityTemplate]
+LocFriendlyName="Zero In!"
+LocLongDescription="Focus and dash up to an enemy to attack them close range with your sidearm. Has +<Ability:ZEROINRS_AIM/> Aim Chance."
+LocHelpText="Focus and dash up to an enemy to attack them close range with your sidearm. Has +<Ability:ZEROINRS_AIM/> Aim Chance."
+LocFlyOverText="Zero In!"
+LocPromotionPopupText="<Bullet/>Focus and dash up to an enemy to attack them close range with your sidearm. Has +<Ability:ZEROINRS_AIM/> Aim Chance.<br/>"
+
+;************************************************************************************************************
+;GTS Perks (A-Z by Class)
+;************************************************************************************************************
+[AssassinPerkGTS X2SoldierAbilityUnlockTemplate]
+DisplayName="Assassin: Shadow Fire"
+Summary="Trains our Assassins to be able to take out enemies from a distance without being revealed. Grants the Shadow Fire ability for use with the Sniper Rifle."
+
+[ShadowFireRS X2AbilityTemplate]
+LocFriendlyName="Shadow Fire"
+LocLongDescription="A special shot with your <Ability:WEAPONNAME/> that if it kills an enemy while you are concealed you will not be revealed."
+LocHelpText="A special shot with your <Ability:WEAPONNAME/> that if it kills an enemy while you are concealed you will not be revealed."
+LocFlyOverText="Shadow Fire"
+LocPromotionPopupText="<Bullet/>A special shot with your <Ability:WEAPONNAME/> that if it kills an enemy while you are concealed you will not be revealed.<br/>"
+
+[ShadowFireNonSniperRS X2AbilityTemplate]
+LocFriendlyName="Shadow Fire"
+LocLongDescription="A special shot with your <Ability:WEAPONNAME/> that if it kills an enemy while you are concealed you will not be revealed."
+LocHelpText="A special shot with your <Ability:WEAPONNAME/> that if it kills an enemy while you are concealed you will not be revealed."
+LocFlyOverText="Shadow Fire"
+LocPromotionPopupText="<Bullet/>A special shot with your <Ability:WEAPONNAME/> that if it kills an enemy while you are concealed you will not be revealed.<br/>"
+
+;Demolitions
+
+[DemolitionsPerkGTS X2SoldierAbilityUnlockTemplate]
+DisplayName="Demolitions: Biggest Booms"
+Summary="Trains our Demolitions so that when they deploy grenades they target enemy weak points, allowing them a chance to deal critical damage."
+
+;Gunner
+
+[GunnerPerkGTS X2SoldierAbilityUnlockTemplate]
+DisplayName="Gunner: Iron Resolve"
+Summary="Trains our Gunners to be more durable in combat. Grants +<Ability:IRONRESOLVERS_DEFENSE/> Defense and +<Ability:IRONRESOLVERS_WILL/> Willpower."
+
+[IronResolveRS X2AbilityTemplate]
+LocFriendlyName="Iron Resolve"
+LocLongDescription="Grants +<Ability:IRONRESOLVERS_DEFENSE/> Defense and +<Ability:IRONRESOLVERS_WILL/> Willpower."
+LocHelpText="Grants +<Ability:IRONRESOLVERS_DEFENSE/> Defense and +<Ability:IRONRESOLVERS_WILL/> Willpower."
+LocFlyOverText="Iron Resolve"
+LocPromotionPopupText="<Bullet/>Grants +<Ability:IRONRESOLVERS_DEFENSE/> Defense and +<Ability:IRONRESOLVERS_WILL/> Willpower.<br/>"	
+
+;Mage
+
+[MagePerkGTS X2SoldierAbilityUnlockTemplate]
+DisplayName="Mage: Hidden Potential"
+Summary="Trains our Mages to unleash their Hidden Psionic Potential. Grants +<Ability:HIDDENPOTENTIAL_PSIOFFENSE/> Psi Offense."
+
+[HiddenPotentialRS X2AbilityTemplate]
+LocFriendlyName="Hidden Potential"
+LocLongDescription="Grants +<Ability:HIDDENPOTENTIAL_PSIOFFENSE/> Psi Offense."
+LocHelpText="Grants +<Ability:HIDDENPOTENTIAL_PSIOFFENSE/> Psi Offense."
+LocFlyOverText="Hidden Potential"
+LocPromotionPopupText="<Bullet/>Grants +<Ability:HIDDENPOTENTIAL_PSIOFFENSE/> Psi Offense.<br/>"	
+
+;Marksman
+
+[MarksmanPerkGTS X2SoldierAbilityUnlockTemplate]
+DisplayName="Marksman: Focused Fire"
+Summary="Trains our Marksmen to be able to control their breathing to take more accurate and potentially more fatal shots at a enemies. Grants +<Ability:FOCUSEDFIRERS_AIM/> Aim & +<Ability:FOCUSEDFIRERS_CRIT/> Critical Chance."
+
+[FocusedFireRS X2AbilityTemplate]
+LocFriendlyName="Focused Fire"
+LocLongDescription="Grants +<Ability:FOCUSEDFIRERS_AIM/> Aim & +<Ability:FOCUSEDFIRERS_CRIT/> Critical Chance."
+LocHelpText="Grants +<Ability:FOCUSEDFIRERS_AIM/> Aim & +<Ability:FOCUSEDFIRERS_CRIT/> Critical Chance."
+LocFlyOverText="Focused Fire"
+LocPromotionPopupText="<Bullet/>Grants +<Ability:FOCUSEDFIRERS_AIM/> Aim & +<Ability:FOCUSEDFIRERS_CRIT/> Critical Chance.<br/>"	
+
+;Medic
+
+[MedicPerkGTS X2SoldierAbilityUnlockTemplate]
+DisplayName="Medic: Combat Vigilance"
+Summary="Trains our Medics to be cautious and aware at all times, allowing them to watch over the squad. Grants +<Ability:COMBATVIGILANCERS_AIM/> Aim, +<Ability:COMBATVIGILANCERS_CRIT/> Critical Chance, +<Ability:COMBATVIGILANCERS_WILL/> Willpower, +<Ability:COMBATVIGILANCERS_DODGE/> Dodge and +<Ability:COMBATIGILANCERS_DEFENSE/> Defense."
+
+[CombatVigilanceRS X2AbilityTemplate]
+LocFriendlyName="Combat Vigilance"
+LocLongDescription="Grants +<Ability:COMBATVIGILANCERS_AIM/> Aim, +<Ability:COMBATVIGILANCERS_CRIT/> Critical Chance, +<Ability:COMBATVIGILANCERS_WILL/> Willpower, +<Ability:COMBATVIGILANCERS_DODGE/> Dodge and +<Ability:COMBATIGILANCERS_DEFENSE/> Defense."
+LocHelpText="Grants +<Ability:COMBATVIGILANCERS_AIM/> Aim, +<Ability:COMBATVIGILANCERS_CRIT/> Critical Chance, +<Ability:COMBATVIGILANCERS_WILL/> Willpower, +<Ability:COMBATVIGILANCERS_DODGE/> Dodge and +<Ability:COMBATIGILANCERS_DEFENSE/> Defense."
+LocFlyOverText="Combat Vigilance"
+LocPromotionPopupText="<Bullet/>Grants +<Ability:COMBATVIGILANCERS_AIM/> Aim, +<Ability:COMBATVIGILANCERS_CRIT/> Critical Chance, +<Ability:COMBATVIGILANCERS_WILL/> Willpower, +<Ability:COMBATVIGILANCERS_DODGE/> Dodge and +<Ability:COMBATIGILANCERS_DEFENSE/> Defense.<br/>"	
+
+;Raider
+
+[RaiderPerkGTS X2SoldierAbilityUnlockTemplate]
+DisplayName="Raider: Lethality"
+Summary="Trains our Raiders to focus their aggression into hitting the enemy as hard as they can. Grants +<Ability:LETHALITYRS_CRIT/> Critical Chance."
+
+[LethalityRS X2AbilityTemplate]
+LocFriendlyName="Lethality"
+LocLongDescription="Grants +<Ability:LETHALITYRS_CRIT/> Critical Chance."
+LocHelpText="Grants +<Ability:LETHALITYRS_CRIT/> Critical Chance."
+LocFlyOverText="Lethality"
+LocPromotionPopupText="<Bullet/>Grants +<Ability:LETHALITYRS_CRIT/> Critical Chance.<br/>"	
+
+;Rifleman
+
+[RiflemanPerkGTS X2SoldierAbilityUnlockTemplate]
+DisplayName="Rifleman: Shake It Off"
+Summary="Trains our Riflemen to better condition themselves and try to shake off any damage they take. Grants +<Ability:SHAKEITOFFRS_DODGE/> Dodge."
+
+[ShakeItOffRS X2AbilityTemplate]
+LocFriendlyName="Shake It Off"
+LocLongDescription="Grants +<Ability:SHAKEITOFFRS_DODGE/> Dodge."
+LocHelpText="Grants +<Ability:SHAKEITOFFRS_DODGE/> Dodge."
+LocFlyOverText="Shake It Off"
+LocPromotionPopupText="<Bullet/>Grants +<Ability:SHAKEITOFFRS_DODGE/> Dodge.<br/>"	
+
+;Scout
+
+[ScoutPerkGTS X2SoldierAbilityUnlockTemplate]
+DisplayName="Scout: Incognito"
+Summary="Trains our Scouts to draw less attention to themselves in the field, allowing them to blend into the background better. Grants -20% Detection Radius from enemies while Concealed."
+
+[IncognitoRS X2AbilityTemplate]
+LocFriendlyName="Incognito"
+LocLongDescription="Grants -20% Detection Radius from enemies while Concealed."
+LocHelpText="Grants -20% Detection Radius from enemies while Concealed."
+LocFlyOverText="Incognito"
+LocPromotionPopupText="<Bullet/>Grants -20% Detection Radius from enemies while Concealed.<br/>"	
+
+;Survivalist
+
+[SurvivalistPerkGTS X2SoldierAbilityUnlockTemplate]
+DisplayName="Survivalist: Conceal and Carry"
+Summary="Trains our Survivalists to be able to stay in concealment when the squad is revealed. They will also harder to detect while concealed with a -40% Detection Radius."
+
+;SWAT
+
+[SWATPerkGTS X2SoldierAbilityUnlockTemplate]
+DisplayName="SWAT: Rapid Response"
+Summary="Trains our SWAT soldiers to move in quicker on targets and be quicker on the trigger. Grants +<Ability:RAPIDRESPONSERS_MOBILITY/> Mobility and +<Ability:RAPIDRESPONSERS_CRIT/> Critical Chance."
+
+[RapidResponseRS X2AbilityTemplate]
+LocFriendlyName="Rapid Response"
+LocLongDescription="Grants +<Ability:RAPIDRESPONSERS_MOBILITY/> Mobility and +<Ability:RAPIDRESPONSERS_CRIT/> Critical Chance."
+LocHelpText="Grants +<Ability:RAPIDRESPONSERS_MOBILITY/> Mobility and +<Ability:RAPIDRESPONSERS_CRIT/> Critical Chance."
+LocFlyOverText="Rapid Response"
+LocPromotionPopupText="<Bullet/>Grants +<Ability:RAPIDRESPONSERS_MOBILITY/> Mobility and +<Ability:RAPIDRESPONSERS_CRIT/> Critical Chance.<br/>"	
+
+;Technician
+
+[TechnicianPerkGTS X2SoldierAbilityUnlockTemplate]
+DisplayName="Technician: Overclock"
+Summary="Trains our Technicians to Overclock their Gremlin units, allowing for more processing power. Grants +<Ability:OVERCLOCKRS_HACK/> Hack."
+
+[OverclockRS X2AbilityTemplate]
+LocFriendlyName="Overclock"
+LocLongDescription="Grants +<Ability:OVERCLOCKRS_HACK/> Hack."
+LocHelpText="Grants +<Ability:OVERCLOCKRS_HACK/> Hack."
+LocFlyOverText="Overclock"
+LocPromotionPopupText="<Bullet/>Grants +<Ability:OVERCLOCKRS_HACK/> Hack.<br/>"	
+
+;**********************************************************
+;CLASS DESCRIPTIONS
+;**********************************************************
+
+[MageRS X2SoldierClassTemplate]
++DisplayName="Mage"
++ClassSummary="Only a very few gifted individuals can naturally develop their psionic potential. Those who are capable could prove to be valuable assets in our fight against the Elders. Only time will tell what these individuals are capable of in the field."
+
++AbilityTreeTitles[0]="Cleric"
++AbilityTreeTitles[1]="Thaumaturge"
++AbilityTreeTitles[2]="Sorcerer"
++AbilityTreeTitles[3]="XCOM"
+;ALPHABETICAL ORDER
++RandomNickNames[0]="Acolyte"
++RandomNickNames[1]="Dreameater"
++RandomNickNames[2]="Druid"
++RandomNickNames[3]="Haze"
++RandomNickNames[4]="Hex"
++RandomNickNames[5]="Magus"
++RandomNickNames[6]="Malaise"
++RandomNickNames[7]="Mystic"
++RandomNickNames[8]="Nightmare"
++RandomNickNames[9]="Shaman"
++RandomNickNames[10]="Souleater"
++RandomNickNames[11]="Voidwalker"
+;ALPHABETICAL ORDER
++RandomNickNames_Male[0]="Wizard"
+;ALPHABETICAL ORDER
++RandomNickNames_Female[0]="Nightshade"
++RandomNickNames_Female[1]="Tharja"
++RandomNickNames_Female[2]="Witch"
+
++RankNames[0]="Rookie"
++RankNames[1]="Initiate"
++RankNames[2]="Acolyte"
++RankNames[3]="Adept"
++RankNames[4]="Disciple"
++RankNames[5]="Mystic"
++RankNames[6]="Warlock"
++RankNames[7]="Magus"
++RankNames[8]="Master"
+
++ShortNames[0]="Rk."
++ShortNames[1]="Int."
++ShortNames[2]="Acl."
++ShortNames[3]="Adp."
++ShortNames[4]="Dsc."
++ShortNames[5]="Mys."
++ShortNames[6]="War."
++ShortNames[7]="Mag."
+
++RankIcons[0]= "UILibrary_Common.rank_rookie"
++RankIcons[1]= "UILibrary_Common.psirank_initiate"
++RankIcons[2]= "UILibrary_Common.psirank_acolyte"
++RankIcons[3]= "UILibrary_Common.psirank_adept"
++RankIcons[4]= "UILibrary_Common.psirank_disciple"
++RankIcons[5]= "UILibrary_Common.psirank_mystic"
++RankIcons[6]= "UILibrary_Common.psirank_warlock"
++RankIcons[7]= "UILibrary_Common.psirank_magus"
+
+[Infiltrator2 X2SoldierClassTemplate]
++DisplayName="Infiltrator"
++ClassSummary="Infiltrators are masters of subterfuge and provide reconnaissance to allies in the field. They can distract enemy troops, close in on objectives and engage targets up close with the pistol."
+
++AbilityTreeTitles[0]="Marksman"
++AbilityTreeTitles[1]="Recon"
++AbilityTreeTitles[2]="Gunslinger"
++AbilityTreeTitles[3]="XCOM"
+
+;ALPHABETICAL ORDER
++RandomNickNames[0]="Acrobat"
++RandomNickNames[1]="Angel"
++RandomNickNames[2]="Blackjack"
++RandomNickNames[3]="Bluebird"
++RandomNickNames[4]="Dragon"
++RandomNickNames[5]="Duchess"
++RandomNickNames[6]="Fox"
++RandomNickNames[7]="Halo"
++RandomNickNames[8]="Mantis"
++RandomNickNames[9]="Ocelot"
++RandomNickNames[10]="Oddjob"
++RandomNickNames[11]="Owl"
++RandomNickNames[12]="Panther"
++RandomNickNames[13]="Robin"
++RandomNickNames[14]="Smoke"
++RandomNickNames[15]="Snake"
++RandomNickNames[16]="Vertigo"
++RandomNickNames[17]="Viper"
++RandomNickNames[18]="Wolf"
+;ALPHABETICAL ORDER
++RandomNickNames_Male[0]="Bulldog"
++RandomNickNames_Male[1]="Chicago"
++RandomNickNames_Male[2]="Eagle"
++RandomNickNames_Male[3]="Falcon"
++RandomNickNames_Male[4]="Hawk"
++RandomNickNames_Male[5]="Gryphon"
+;ALPHABETICAL ORDER
++RandomNickNames_Female[0]="Amber"
++RandomNickNames_Female[1]="Bell"
++RandomNickNames_Female[2]="Crystal"
++RandomNickNames_Female[3]="Dagger"
++RandomNickNames_Female[4]="Rogue"
++RandomNickNames_Female[5]="Ruby"
++RandomNickNames_Female[6]="Sapphire"
++RandomNickNames_Female[7]="Scarlet"
++RandomNickNames_Female[8]="Widow"
+
+[Specialist2 X2SoldierClassTemplate]
++DisplayName="Technician"
++ClassSummary="Technicians utilize the Gremlin to hack the advent network & retrieve sensitive data. They excel at assisting allies & disrupting enemies."
+
++AbilityTreeTitles[0]="Mechanist"
++AbilityTreeTitles[1]="Hacker"
++AbilityTreeTitles[2]="Specialist"
++AbilityTreeTitles[3]="XCOM"
+;ALPHABETICAL ORDER
++RandomNickNames[0]="Atlas"
++RandomNickNames[1]="Bitcoin"
++RandomNickNames[2]="Bluescreen"
++RandomNickNames[3]="Crasher"
++RandomNickNames[4]="Facetime"
++RandomNickNames[5]="Firefox"
++RandomNickNames[6]="Fixit"
++RandomNickNames[7]="Fuzz"
++RandomNickNames[8]="Gadget"
++RandomNickNames[9]="Gizmo"
++RandomNickNames[10]="Glitch"
++RandomNickNames[11]="Hackz"
++RandomNickNames[12]="Index"
++RandomNickNames[13]="Jockey"
++RandomNickNames[14]="Mechanic"
++RandomNickNames[15]="Napster"
++RandomNickNames[16]="Overload"
++RandomNickNames[17]="Sparks"
++RandomNickNames[18]="Sparky"
++RandomNickNames[19]="Static"
++RandomNickNames[20]="The Guru"
++RandomNickNames[21]="Torrent"
++RandomNickNames[22]="Trojan"
++RandomNickNames[23]="Wwwyzzerdd"
+
+[Ranger2 X2SoldierClassTemplate]
++DisplayName="Ranger"
++ClassSummary="The Ranger serves as our primary reconnaissance unit, capable of moving independently in concealment while engaging enemies at close range using extensive training in swordsmanship."
++AbilityTreeTitles[0]="Assault"
++AbilityTreetitles[1]="Tactician"
++AbilityTreeTitles[2]="CQC"
++AbilityTreeTitles[3]="XCOM"
+
+[Grenadier2 X2SoldierClassTemplate]
++DisplayName="Grenadier"
++ClassSummary="Serving as our demolitions experts, the Grenadiers provide heavy ordnance delivery whenever and wherever we need it."
++AbilityTreeTitles[0]="Demolitions Expert"
++AbilityTreeTitles[1]="Heavy Gunner"
++AbilityTreeTitles[2]="Juggernaut"
++AbilityTreeTitles[3]="XCOM"
+
+;************************************************************************************************************
+;END FILE
+;************************************************************************************************************

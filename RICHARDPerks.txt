@@ -1,0 +1,267 @@
+This is a list of all the perks that come with Richards WotC class pack in case you want to use them in your own class creation. (MUST BE SUBBED TO MY MOD)
+They are sorted by what weapon they require with General-Non Weapon perks at the top. They are also written in the way to add them to XComClassData.ini
+You can use any perks from any subscribed mod as long as you reference them right but I will only be providing suport for mine.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Contents:
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+01. General Perks (Don't require any specific weapon)
+02. Conditional Perks (Require specific weapon, secondary weapon or condition)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+01/ "General Perks" (A-Z)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-Breaching Round, Destroys cover, was intended for Shotguns but will work with any weapon (uses 2 ammo)
+AbilityName="BreachingRoundRS", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Combat Vigilance, Grants +5 Aim, Crit, Will, Dodge & Defense
+AbilityName="CombatVigilanceRS"
+
+-Conceal & Carry, The soldier will not be revealed when the squad is revealed & has a -60% detection radius. Also the soldier gets 1 charge of conceal
+AbilityName="ConcealandCarryRS"
+
+-Death Mark, Mark a target, granting allies +25 critical chance on them
+AbilityName="DeathMarkRS"
+
+-Distortion Field, A passive effect that gives allies +15 defense in battle when this unit is on the mission (even when dead)
+AbilityName="DistortionFieldRS"
+
+-Explosive Shot, Deal Double Damage & rupture a target making them take +3 damage from future attacks, costs extra ammo
+AbilityName="ExplosiveShotRS",  ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Extra Layers, Gives the Soldier +1 armor
+AbilityName="ExtraLayersRS"
+
+-Fire at Will, When on Overwatch take multiple reaction shots at enemies until there are no more visible or the soldier runs out of ammo
+AbilityName="FireAtWillRS", ApplyToWeaponSlot=eInvSlot_Unknown
+
+-First Aider, Equipped Medikits gain +1 charges
+AbilityName="FirstAiderRS", ApplyToWeaponSlot=eInvSlot_Unknown
+
+-Flash Round, A shot with +25 aim that disorients a target if it hits (was intended for shotguns but works with any weapon)
+AbilityName="FlashRoundRS", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Flechette Shot, a Wide shot that hits enemies within a cone but deals less damage, is more accurate than a standard shot but costs more ammo (was for shotguns but works for all weapons)
+AbilityName="FlechetteShotRS", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Focused Fire, Gain +10 Aim & +10 Crit chance on all attacks
+AbilityName="FocusedFireRS"
+
+-Fortitude, Gain +15 Willpower
+AbilityName="FortitudeRS"
+
+-Hidden Potential, Gain +25 Psi Offense
+AbilityName="HiddenPotentialRS"
+
+-Hide, Re-enter concealment at any time, has a cooldown
+AbilityName="HideRS"
+
+-Hip Fire, A free shot with your primary wepaon but at an aim penalty
+AbilityName="HipFireRS", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Incognito, Grants -20% detection Radius when Concealed
+AbilityName="IncognitoRS"
+
+-Iron Resolve, Grants +10 Defense & +10 Willpower
+AbilityName="IronResolveRS"
+
+-Lethality, Grants +25 Critical chance on all attacks
+AbilityName="LethalityRS"
+
+-Long Reach, Grants Squadsight & Longwatch
+AbilityName="LongReachRS"
+
+-Mark Target, Mark a target, granting allies +15 aim against them
+AbilityName="MarkTargetRS"
+
+-Overclock, Gain +25 Hack Score
+AbilityName="OverclockRS"
+
+-Overdrive, Gain 1 action point when used, has a cooldown
+AbilityName="OverdriveRS"
+
+-Paramedic, Equipped medikits gain +2 charges
+AbilityName="ParamedicRS", ApplyToWeaponSlot=eInvSlot_Unknown
+
+-Rapid Response, Grants +2 Mobility & +10 Critical Chance
+AbilityName="RapidResponseRS"
+
+-Seek & Destroy, 50% chance to take a free reaction shot at newly revealed enemies (Hunter Protocol from SPARK DLC for non DLC users)
+AbilityName="SeekandDestroyRS", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Shake It Off, Gain +25 Dodge
+AbilityName="ShakeItOffRS"
+
+-Shredder Blast, Damage enemies & destroy cover in a cone area (is Saturation Fire essentially but was designed with shotgun in mind, works for any weapon though)
+AbilityName="ShredderBlastRS",  ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Stick & Move, Gain +5 Defense & +3 Mobility
+AbilityName="StickAndMoveRS"
+
+-Storm Position, Dash up to an enemy and attack them with your primary wepaon
+AbilityName="StormPositionRS",  ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Swat Strike (Just Known as "Strike"), a Melee attack that deals 1-3 damage (based on VIP kncokout ability)
+AbilityName="SWATStrikeRS", ApplyToWeaponSlot=eInvSlot_Unknown
+
+-Swat Takedown (Just Known as "Takedown"), REPLACES STRIKE, a melee attack that deals 2-4 damage & carries a 50% chance to stun a target for 2 turns.
+AbilityName="SWATTakedownRS", ApplyToWeaponSlot=eInvSlot_Unknown
+
+-Warning Shot, a shot that deals no damage but has a chance to panic an enemy, has an aim bonus
+AbilityName="WarningShotRS", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Weapon Specialist, Deal +1 damage with primary weapons
+AbilityName="WeaponSpecialistRS",	ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+02/ "Conditional Perks"
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------
+PERKS THAT REQUIRE OTHER PERKS
+
+-Puglist, Deal +1 Damage & gain +10 aim on Strike Attacks (REQUIRES EITHER SWATSTRIKERS OR SWATTAKEDOWNRS)
+AbilityName="PuglistRS", ApplyToWeaponSlot=eInvSlot_Unknown
+
+-Punisher, Grants +25 Crit chance on strike attacks (REQUIRES EITHER SWATSTRIKERS OR SWATTAKEDOWNRS)
+AbilityName="PunisherRS", ApplyToWeaponSlot=eInvSlot_Unknown
+--------------------------------
+
+--------------------------------
+PERKS THAT REQUIRE THE GREMLIN
+
+-Action Protocol, Grants an ally an action point (2 uses per mission)
+AbilityName="ActionProtocolRS", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Aim Assist, Grants an ally increased aim and Squadsight for 1 turn
+AbilityName="AimAssistRS", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Burn Protocol, Send the gremlin to deal damage & set a target on fire (1 use per mission)
+AbilityName="BurnProtocolRS", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Kill Cam, Grants an ally increased Critical Chance & Dodge for 1 turn
+AbilityName="KillCamRS", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Repair Protocol, Repair a robotic ally (spark or hacked unit, basically SPARK DLC ability for non-DLC users)
+AbilityName="RepairProtocolRS", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Shade Protocol, Grants an ally increased mobility & shadowstep for 1 turn
+AbilityName="ShadeProtocolRS", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Shock Protocol, Stuns an enemy unit for 2 turns (2 uses per mission)
+AbilityName="ShockProtocolRS", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+--------------------------------
+
+--------------------------------
+PERKS THAT REQUIRE THE GRENADE LAUNCHER
+
+-Sapper, Deal +1 Damage with the Grenade Launcher
+AbilityName="SapperRS", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+--------------------------------
+
+--------------------------------
+PERKS THAT REQUIRE THE PISTOL
+
+-Pot Shot, A Free Pistol shot with an aim penalty that does extra damage (Basically Lightning Hands + Deadeye)
+AbilityName="PotShotRS", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Shadow Shot, A shot from concealment with the pistol with an aim & crit bonus that doesn't reveal you if you kill an enemy with it
+AbilityName="ShadowShotRS", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Surprise Shot, a Pistol shot with an aim & crit bonus that a) If kills an enemy doesn't reveal you or b)If fails to kill an enemy stuns them for 2 turns
+AbilityName="SurpriseShotRS", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Wounding Shot, A pistol shot that ruptures a target making them take +2 damage from future attacks
+AbilityName="WoundingShotRS", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+--------------------------------
+
+--------------------------------
+PERKS THAT REQUIRE THE PSI AMP
+
+-Barrier, Creates a 5 point Energy shield around allies for a few turns
+AbilityName="BarrierRS",  ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Disable, Disables enemy weapons in a large AoE area & carries a chance to stun them aswell!
+AbilityName="DisableRS",  ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Malaise, Creates a cloud of misery that poisons & disorients any targets within it
+AbilityName="MalaiseRS",  ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Psi Reanimate, Raise a zombie from a dead humanoid corpse to fight for you
+AbilityName="PsiReanimateRS",  ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Restore, Heals an ally for 6 hit points, also removes most negative conditions
+AbilityName="RestoreRS",  ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Teleport, Teleport to any square within squadsight, free action
+AbilityName="TeleportRS",  ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+//Combined Perks - Due to 2 choices per rank//
+-Aegis, Grants Fortress & Sustain
+AbilityName="AegisRS",  ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Boon, Grants Solace & Restore
+AbilityName="BoonRS",  ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Controller, Grants Insanity & Psi-Reanimate
+AbilityName="ControllerRS",  ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Misery, Grants Malaise & Soulsteal
+AbilityName="MiseryRS",  ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Protector, Grants Stasis & Stasis Shield
+AbilityName="ProtectorRS",  ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Voidmaster, Grants Schism & Voidrift
+AbilityName="VoidmasterRS",  ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+--------------------------------
+
+--------------------------------
+PERKS THAT REQUIRE THE SNIPER RIFLE
+
+-Shadowfire, a special shot that allows kills with the sniper rifle to not reveal the user
+AbilityName="ShadowFireRS", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Snapshot, allows the use of the sniper rifle after moving, has an aim & crit penalty and allows multiple Death From Above SPAM!
+AbilityName="SnapShotRS", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+--------------------------------
+
+--------------------------------
+PERKS THAT REQUIRE THE SWORD
+
+-Bladefighter, Increase Aim & Crit chance with sword attacks
+AbilityName="BladefighterRS", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Merciless, Increased Damage & Crit chance on sword attacks
+AbilityName="MercilessRS", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Slash, This version of slash only costs 1 action but can be used on adjacent enemies (can be used with the normal slash)
+AbilityName="Slash_RS", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+--------------------------------
+
+--------------------------------
+PERKS THAT REQUIRE EITHER THE PISTOL OR THE SWORD
+
+-Charge, dash & attack with your sidearm
+AbilityName="ChargeRS", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Sidearm Specialist, deal +1 damage with sidearm attacks, swords also get an Aim increase
+AbilityName="SidearmSpecialistRS", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+//Charge Upgrades - These all repace the Charge skill//
+-Blitz, REPLACES CHARGE, Gain +25% Crit chance on Charge attacks
+AbilityName="BlitzRS", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Rush, REPLACES CHARGE, Charge attack that is a free action but has a cooldown
+AbilityName="RushRS", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Zero In, REPLACES CHARGE, Gain +25 Aim on Charge attacks
+AbilityName="ZeroInRS", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+--------------------------------
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+END FILE
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

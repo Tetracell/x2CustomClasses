@@ -1,0 +1,91 @@
+This file lists (A-Z) all ther perks you can (might be able to) use from the DLC (Alien Hunters & Shens Last Gift)
+Abilities that require specific perks or weapons are listed in the A-Z list but notes are added to say if they require the weapon or not.
+Note that I'm not 100% sure if all these abilities will work, I don't really use them as I prefer to earn them
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-Adaptive Aim, Overdrive shots no longer have aim penalties (REQUIRES OVERDRIVE)
+AbilityName="AdaptiveAim", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Arsenal, Gives a Heavy Weapon slot but REQUIRES the Spark Bit as a secondary weapon
+AbilityName="Arsenal", ApplyToWeaponSlot=eInvSlot_Unknown
+
+-Bombard, Throw the Spark bit to deal damage to enemies (REQUIRES SPARK BIT)
+AbilityName="Bombard", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Bulwark, Grants +1 Armor and makes the soldier provide full cover to allies
+AbilityName="Bulwark"
+
+-Capacitor Discharge (Shen), Has infinite usage
+AbilityName="CapacitorDischarge_Shen", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Channeling Field, Every time you are targeted by an attack you build up energy, this is then release on your next standard shot
+AbilityName="AbsorptionField"
+
+-Combat Protocol (Shen), Combat Protocol but infinite usage with cooldown (REQUIRES GREMLIN)
+AbilityName="CombatProtocol_Shen", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Frostbite (Not sure if will work), a grapple that freezes an enemy in place once per mission
+AbilityName="FreezingLash"
+
+-Hunter Protoocl, Gives a 33% chance to takes free reaction shots at newly revealed enemies
+AbilityName="HunterProtocol", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Icarus Jump (Probably wont work), move to a new location on the map
+AbilityName="IcarusJump"
+
+-Icarus Panic, Archons have a chance to panic when they see this soldier
+AbilityName="IcarusPanic"
+
+-Intimidate, Shots against this soldier have a chance to make enemies panic
+AbilityName="Intimidate"
+
+-Mechanical Chasis, Grants immunity to fire and poison
+AbilityName="RobotImmunities", ApplyToWeaponSlot=eInvSlot_Unknown
+
+-Medical Protocol (Shen), Provides more healing charges than normal medical protocol
+AbilityName="MedicalProtocol_Shen", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Nova, Deal AoE damage to nearby enemies but doing more novas makes the soldier take damage
+AbilityName="Nova", ApplyToWeaponSlot=eInvSlot_Unknown
+
+-Overdrive, Allows 3 actions in one turn and no action is turn ending
+AbilityName="Overdrive", ApplyToWeaponSlot=eInvSlot_PrimaryWeapon
+
+-Rainmaker, Heavy weapons deal +2 damage and have a wider area (I'm pretty sure this REQUIRES Spark Bit)
+AbilityName="Rainmaker", ApplyToWeaponSlot=eInvSlot_Unknown
+
+-Rage Panic, Mutons and Berserkers have a chance of panicking when they see this soldier
+AbilityName="RagePanic"
+
+-Ragestrike, Move and melee attack an enemy (free action)
+AbilityName="Ragestrike"
+
+-Repair, Send the Spark Bit (Or Gremlin) to repair a robitc ally (REQUIRES SPARK BIT OR GREMLIN)
+AbilityName="Repair", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Sacrifice, Generate a Protective field that makes all attacks target this unit, gian bonus defense and armor while active
+AbilityName="Sacrifice", ApplyToWeaponSlot=eInvSlot_Unknown
+
+-Serpent Panic, Vipers have a chance to panic when they see this soldier
+AbilityName="SerpentPanic"
+
+-Shadowfall, conceals with the pistol, should work with Pistols
+AbilityName="Shadowfall", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon or AbilityName="ShadowfallConcealment", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon
+
+-Strike, Strike an enemy with your fists (I don't think this will work)
+AbilityName="Strike", ApplyToWeaponSlot=eInvSlot_Unknown
+
+-ThrowAxe (This is unlikely to work but could try with a sword equipped), Free throw action
+AbilityName="ThrowAxe", ApplyToWeaponSlot=eInvSlot_SecondaryWeapon or AbilityName="ThrowAxe"
+
+-Wrecking Ball, When in overdrive can break through walls (lol)
+AbilityName="WreckingBall"
+
+-Vault Ability, allows you to jump to highground without climbing
+AbilityName="VaultAbility" or? AbilityName="VaultAbilityPassive"
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+END FILE
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
